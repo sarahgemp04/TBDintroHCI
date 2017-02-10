@@ -16,6 +16,8 @@ app.set('port', process.env.PORT || 3000);
 
 var index = require('./routes/index');
 var myworkout = require('./routes/myworkout');
+var bodyMap = require('./routes/bodyMap');
+var workoutResults = require('./routes/workoutresults')
 
 
 app.set('views', path.join(__dirname, 'views'));
@@ -39,6 +41,8 @@ if ('development' == app.get('env')) {
 // Add routes here
 app.get('/', index.view);
 app.get('/myworkout', myworkout.viewWorkoutScreen);
+app.get('/bodyMap', bodyMap.viewBodyMap);
+app.get('/workoutresults', workoutResults.viewWorkoutResults);
 
 // Example route
 // app.get('/users', user.list);
