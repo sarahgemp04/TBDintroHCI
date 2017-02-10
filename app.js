@@ -16,16 +16,13 @@ app.set('port', process.env.PORT || 3000);
 
 var index = require('./routes/index');
 var myworkout = require('./routes/myworkout');
-<<<<<<< HEAD
 var bodyMap = require('./routes/bodyMap');
 var workoutResults = require('./routes/workoutresults')
-=======
 var favorites = require('./routes/favorites');
 var dailylog = require('./routes/dailylog');
 var notes = require('./routes/notes');
 
 var existing = require('./routes/existing')
->>>>>>> dcaf03d031a992ef2c95e7cb4c008b98547a56de
 
 
 app.set('views', path.join(__dirname, 'views'));
@@ -49,16 +46,13 @@ if ('development' == app.get('env')) {
 // Add routes here
 app.get('/', index.view);
 app.get('/myworkout', myworkout.viewWorkoutScreen);
-<<<<<<< HEAD
 app.get('/bodyMap', bodyMap.viewBodyMap);
 app.get('/workoutresults', workoutResults.viewWorkoutResults);
-=======
 app.get('/favorites', favorites.viewfavorites);
 app.get('/dailylog', dailylog.viewDailyLog);
 app.get('/notes', notes.viewNotes);
 
 app.get('/existing', existing.viewExisting);
->>>>>>> dcaf03d031a992ef2c95e7cb4c008b98547a56de
 
 // Example route
 // app.get('/users', user.list);
