@@ -8,9 +8,6 @@ var http = require('http');
 var path = require('path');
 var handlebars = require('express3-handlebars')
 
-var index = require('./routes/index');
-// Example route
-// var user = require('./routes/user');
 
 var app = express();
 
@@ -18,7 +15,7 @@ var app = express();
 app.set('port', process.env.PORT || 3000);
 
 var index = require('./routes/index');
-var project = require('./routes/project');
+var myworkout = require('./routes/myworkout');
 
 
 app.set('views', path.join(__dirname, 'views'));
@@ -41,7 +38,8 @@ if ('development' == app.get('env')) {
 
 // Add routes here
 app.get('/', index.view);
-app.get('/project/:name', project.viewProject);
+app.get('/myworkout', myworkout.viewWorkoutScreen);
+
 // Example route
 // app.get('/users', user.list);
 
