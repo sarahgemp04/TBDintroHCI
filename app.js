@@ -19,7 +19,7 @@ var myworkout = require('./routes/myworkout');
 var favorites = require('./routes/favorites');
 var dailylog = require('./routes/dailylog');
 var notes = require('./routes/notes');
-var bodyMap = require('./routes/bodyMap');
+
 var existing = require('./routes/existing')
 
 
@@ -47,7 +47,7 @@ app.get('/myworkout', myworkout.viewWorkoutScreen);
 app.get('/favorites', favorites.viewfavorites);
 app.get('/dailylog', dailylog.viewDailyLog);
 app.get('/notes', notes.viewNotes);
-app.get('/bodyMap', bodyMap.viewBodyMap);
+
 app.get('/existing', existing.viewExisting);
 
 // Example route
