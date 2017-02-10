@@ -18,6 +18,7 @@ var index = require('./routes/index');
 var myworkout = require('./routes/myworkout');
 var bodyMap = require('./routes/bodyMap');
 var workoutResults = require('./routes/workoutresults')
+var yourlist = require('./routes/yourlist');
 var favorites = require('./routes/favorites');
 var dailylog = require('./routes/dailylog');
 var notes = require('./routes/notes');
@@ -51,6 +52,7 @@ app.get('/workoutresults', workoutResults.viewWorkoutResults);
 app.get('/favorites', favorites.viewfavorites);
 app.get('/dailylog', dailylog.viewDailyLog);
 app.get('/notes', notes.viewNotes);
+app.get('/yourlist', yourlist.viewWorkoutList);
 
 app.get('/existing', existing.viewExisting);
 
