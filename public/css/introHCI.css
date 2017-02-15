@@ -109,6 +109,10 @@ h1 {
     content: url(/img/notepad.png);
 }
 
+.icon-home:before {
+    content: url(/img/home.png);
+}
+
 #handle {
     position: absolute;
     margin: 10px 10px 10px 0;
@@ -152,7 +156,7 @@ h1 {
     height: 40px;
     border: 0px solid gray;
     border-radius: 50%;
-    background-color: rgba(20,20,20,0.2);
+    background-color: #009688;
     margin: 0 0 30px 30px;
     text-align: center;
 }
