@@ -1,22 +1,7 @@
-/* applies to anything of class "example-class-selector" */
-.example-class-selector {
-	margin-top: 2em;
-}
-
-/* applies to any <p> descendants of an element of class "example-class-selector" */
-.example-class-selector p {
-	/* Colors are in hexadecimal: http://www.colorpicker.com/ */	
-	color: #CC00AA;
-}
 
 h1 {
      text-align: center;
      margin: 40px;
-}
-
-img.icon{
-   width:24px;
-   height:24px;
 }
 
 .btn {
@@ -40,15 +25,88 @@ img.icon{
     transition: all 0.3s;
 }
 
-.btn-1 {
-    border: 3px solid #333;
-    color: #333;
+.btn:after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
 }
 
-.btn-1a:hover,
-.btn-1a:active {
-    color: #0e83cd;
-    background: #333;
+.btn-1 {
+    background: #009688;
+    color: #fff;
+}
+
+.btn-1:hover {
+    background: #26A69A;
+    color: #fff;
+}
+
+.btn-1:active {
+    background: #00796B;
+    top: 2px;
+    color: #fff;
+}
+
+.btn-1:before {
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    line-height: 3;
+    font-size: 140%;
+    width: 60px;
+}
+
+.btn-1e {
+    padding: 25px 120px 25px 60px;
+    overflow: hidden;
+}
+
+.btn-1e:before {
+    left: auto;
+    right: 10px;
+    z-index: 2;
+}
+
+.btn-1e:after {
+    width: 30%;
+    height: 200%;
+    background: rgba(255,255,255,0.1);
+    z-index: 1;
+    right: 0;
+    top: 0;
+    margin: -5px 0 0 -5px;
+    -webkit-transform-origin: 0 0;
+    -webkit-transform: rotate(-20deg);
+    -moz-transform-origin: 0 0;
+    -moz-transform: rotate(-20deg);
+    -ms-transform-origin: 0 0;
+    -ms-transform: rotate(-20deg);
+    transform-origin: 0 0;
+    transform: rotate(-20deg);
+}
+
+.btn-1e:hover:after {
+    width: 40%;
+}
+
+.icon-weight:before {
+    content: url(/img/weightlifting.png);
+}
+
+.icon-calendar:before {
+    content: url(/img/calendar.png);
+}
+
+.icon-star:before {
+    content: url(/img/star.png);
+}
+
+.icon-notepad:before {
+    content: url(/img/notepad.png);
 }
 
 #handle {
