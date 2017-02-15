@@ -35,17 +35,17 @@ h1 {
 }
 
 .btn-1 {
-    background: #009688;
+    background: #00BCD4;
     color: #fff;
 }
 
 .btn-1:hover {
-    background: #26A69A;
+    background: #26C6DA;
     color: #fff;
 }
 
 .btn-1:active {
-    background: #00796B;
+    background: #00ACC1;
     top: 2px;
     color: #fff;
 }
@@ -156,7 +156,7 @@ h1 {
     height: 40px;
     border: 0px solid gray;
     border-radius: 50%;
-    background-color: #009688;
+    background-color: #00BCD4;
     margin: 0 0 30px 30px;
     text-align: center;
 }
