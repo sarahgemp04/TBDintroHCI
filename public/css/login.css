@@ -6,6 +6,9 @@ body {
   font-family: "Helvetica Neue", sans-serif;
 }
 
+body{
+  background: #D3D5D5;
+}
 
 h1{
   color:#333 !important;
@@ -127,11 +130,8 @@ textarea {
 }
 
 .field-wrap {
-  font-weight: 700;
-  text-transform: uppercase;
   position: relative;
   margin-bottom: 40px;
-  font-size: 10px;
 }
 
 .top-row:after {
@@ -174,4 +174,21 @@ textarea {
 .button-block {
   display: block;
   width: 100%;
+}
+
+#homeElem {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    border: 0px solid gray;
+    border-radius: 50%;
+    background-color: #00BCD4;
+    margin: 0 0 30px 30px;
+    text-align: center;
+}
+
+#homeElem img {
+    margin-top: 5px;
 }

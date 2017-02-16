@@ -1,4 +1,6 @@
-
+body{
+  background: #D3D5D5;
+}
 
 h1 {
      text-align: center;
@@ -175,6 +177,14 @@ h1 {
 
 .jumbotron p {
      color: #6e6e6e;
+}
+
+.bodyMap {
+width: 300px;
+height: 600px;
+position: absolute;
+left: 50%;
+margin-left: -150px;
 }
 
 @media (max-width: 550px) {
