@@ -22,6 +22,7 @@ var yourlist = require('./routes/yourlist');
 var favorites = require('./routes/favorites');
 var dailylog = require('./routes/dailylog');
 var notes = require('./routes/notes');
+var login = require('./routes/login')
 
 var existing = require('./routes/existing')
 
@@ -53,7 +54,7 @@ app.get('/favorites', favorites.viewfavorites);
 app.get('/dailylog', dailylog.viewDailyLog);
 app.get('/notes', notes.viewNotes);
 app.get('/yourlist', yourlist.viewWorkoutList);
-
+app.get('/login', login.viewLogin);
 app.get('/existing', existing.viewExisting);
 
 // Example route

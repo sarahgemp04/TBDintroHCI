@@ -2,34 +2,39 @@
 
 <html>
 <head>
-	<title>Total Body Design</title>	
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href="/css/bootstrap.min.css" rel="stylesheet">
-	<link href="/css/bootstrap-theme.min.css" rel="stylesheet">
-	<link href="/css/introHCI.css" rel="stylesheet">
+  <title>Total Body Development</title> 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/css/bootstrap-theme.min.css" rel="stylesheet">
+  <link href="/css/introHCI.css" rel="stylesheet">
 <body>
- <h1>Welcome, @userName!</h1> 
 <div class="objects">
- <div class="mainOption">
-    <a href="myworkout" class="text-primary">My Workout</a>
-    <img src="/img/weightlifting.png" class="icon"></img>
-  </div>
-  <div class="mainOption">
-    <a href="dailylog" class="text-primary">Daily Log</a>
-    <img src="img/calendar.png" class="icon"></img>
-  </div>
-  <div class="mainOption">
-    <a href="favorites" class="text-primary">Favorites</a>
-    <img src="img/star.png" class="icon"></img>
-  </div>
-  <div class="mainOption">
-    <a href="notes" class="text-primary">Notes</a>
-    <img class="icon" src="/img/notepad.png"></img>
-  </div>
- 
+<span id="login"><a href="login">Login/Sign Up</a></span>
+  <h1>Welcome, @username!</h1> 
+  <form action="myworkout">
+    <button class="btn btn-1 btn-1e icon-weight">
+      My Workout
+    </button>
+  </form>
+  <form action="dailylog">
+    <button class="btn btn-1 btn-1e icon-calendar">
+      Daily Log
+    </button>
+  </form>
+  <form action="favorites">
+    <button class="btn btn-1 btn-1e icon-star">
+      Favorites
+    </button>
+  </form>
+  <form action="notes">
+    <button class="btn btn-1 btn-1e icon-notepad">
+      Notes
+    </button>
+  </form>
 </div>
-  <script src="https://code.jquery.com/jquery.js"></script>
-  <script src="/js/bootstrap.min.js"></script>
+
+<script src="https://code.jquery.com/jquery.js"></script>
+<script src="/js/bootstrap.min.js"></script>
 </body>
 </html>
