@@ -6,31 +6,12 @@ body {
   font-family: "Helvetica Neue", sans-serif;
 }
 
-html {
-  overflow-y: scroll;
-}
 
 h1{
   color:#333 !important;
 }
 
-a {
-  text-decoration: none;
-  color: #00BCD4;
-  -webkit-transition: .5s ease;
-  transition: .5s ease;
-}
-
-a:hover {
-  color: #26C6DA;
-}
-
-a:active {
-  color: #00ACC1;
-}
-
 .form {
-  color: #333;
   font-family: inherit;
   font-size: inherit;
   padding: 40px;
@@ -118,10 +99,6 @@ label.active .req {
   opacity: 0;
 }
 
-label.highlight {
-  color: #333;
-}
-
 input, textarea {
   font-family: inherit;
   font-size: 22px;
@@ -197,9 +174,4 @@ textarea {
 .button-block {
   display: block;
   width: 100%;
-}
-
-.forgot {
-  margin-top: -20px;
-  text-align: right;
 }
