@@ -329,10 +329,39 @@ bottom: 0;
     padding: 0 5px 0 5px;
     font-size: 12px;
 }
-
 .tabBar img {
     width: 20px;
 }
+
+ul.botnav {
+    list-style-type: none;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+ul.botnav li {float: left;}
+
+ul.botnav li a {
+    display: inline-block;
+    color: #333;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 14px;
+}
+
+ul.botnav li a:hover {
+    background-color: #00BCD4;
+    color: #fff;
+}
+
+ul.botnav li.icon {display: none;}
 
 /* Calendar code inspiration found on w3Schools. */
 .month {
