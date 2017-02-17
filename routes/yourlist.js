@@ -1,5 +1,6 @@
 exports.viewWorkoutList = function(req, res) { 
+	var vid = req.query.id;
   res.render('yourlist', {
-    //nothing to do
+    'video': vid
   });
 };
