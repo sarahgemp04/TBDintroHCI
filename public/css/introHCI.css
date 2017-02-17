@@ -197,6 +197,7 @@ bottom: 0;
     height: 600px;
     position: absolute;
     margin-left: 25%;
+    padding-bottom: 20px;
 }
 
 .workoutOptions {
@@ -234,6 +235,9 @@ bottom: 0;
     margin-left: 0;
     position: relative;
     text-align: center;
+     -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
 }
 .workoutLeft:hover {
     background: #26C6DA;
@@ -260,6 +264,35 @@ bottom: 0;
     height: 80px;
     width: 80px;
     text-align: center;
+}
+
+.tabBar {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-flow: row; 
+    align-items: center;
+    justify-content: space-between;
+    -webkit-align-items: center;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    padding: 3px 10px;
+    background-color: #e3eff0;
+    box-shadow: 2px 2px 4px gray;
+    border-top: solid #a6a6a6 1px;
+}
+
+.tabItem {
+    text-align: center;
+    width: 90px;
+}
+
+.tabBar img {
+    width: 20px;
+
 }
 
 @media (max-width: 550px) {

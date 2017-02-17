@@ -18,9 +18,29 @@
   <body>
   <span id="handle">@username</span>
   <h1>Favorites</h1>
-   <div id="homeElem">
-    <a href="/"><img src="img/home.png"></a> 
-  </div>
+   <div class="tabBar">
+  <a href="/"><div class="tabItem">
+    <img src="/img/homegray.png">
+    <p><small>Home</small></p>
+  </div></a>
+  <a href=myworkout><div class="tabItem">
+    <img src="/img/weightliftinggray.png">
+    <p><small>My Workout</small></p>
+  </div></a>
+  <a href=dailylog><div class="tabItem">
+    <img src="/img/calendargray.png">
+    <p><small>Daily Log</small></p>
+  </div></a>
+  <a href=favorites><div class="tabItem">
+    <img src="/img/stargray.png">
+    <p><small>Favorites</small></p>
+  </div></a>
+  <a href=notes><div class="tabItem">
+    <img src="/img/notepadgray.png">
+    <p><small>Notes</small></p>
+  </div></a>
+</div>
+
     <script src="https://code.jquery.com/jquery.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="/js/bootstrap.min.js"></script>
