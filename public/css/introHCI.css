@@ -383,6 +383,10 @@ bottom: 0;
     color: white !important
 }
 
+.videoContainer {
+    margin: 20px auto;
+}
+
 @media (max-width: 550px) {
   .btn {
     width: 350px;
@@ -404,8 +408,10 @@ bottom: 0;
   .workoutOptions li {
     margin-top: 10px;
     width: 75px;
-
-}
+  }
+  .videoContainer iframe {
+    width: 375px;
+  }
 }
 @media (max-width: 349px) {
   .btn {
