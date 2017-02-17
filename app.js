@@ -47,6 +47,7 @@ if ('development' == app.get('env')) {
 
 // Add routes here
 app.get('/', index.view);
+app.post('/', index.view);
 app.get('/myworkout', myworkout.viewWorkoutScreen);
 app.get('/bodyMap', bodyMap.viewBodyMap);
 app.get('/workoutresults', workoutResults.viewWorkoutResults);
