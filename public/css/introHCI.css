@@ -320,6 +320,7 @@ bottom: 0;
 .tabBar a {
     margin: 0;
     padding: 5px 4px 3px 0px;
+    display: inline-block;
     text-decoration: none;
     color: #26C6DA;
 }
@@ -333,27 +334,32 @@ bottom: 0;
     width: 20px;
 }
 
-ul.botnav {
-    list-style-type: none;
+.botnav {
+    list-style: none;
     position: fixed;
     bottom: 0;
     width: 100%;
     margin: 0;
     padding: 0;
+    text-align: center;
     overflow: hidden;
     background-color: #fff;
 }
 
-ul.botnav li {float: left;}
+ul.botnav li {
+    display: inline-block;
+    margin: auto;
+}
 
 ul.botnav li a {
-    display: inline-block;
+    display: block;
     color: #333;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     transition: 0.3s;
-    font-size: 14px;
+    font-size: 10px;
+    margin: auto;
 }
 
 ul.botnav li a:hover {
@@ -361,7 +367,14 @@ ul.botnav li a:hover {
     color: #fff;
 }
 
-ul.botnav li.icon {display: none;}
+ul.botnav img {
+    width: 10px;
+}
+
+a.active {
+    background-color: #00BCD4;
+    color: #fff;
+}
 
 /* Calendar code inspiration found on w3Schools. */
 .month {
