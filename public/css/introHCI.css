@@ -478,3 +478,9 @@ a.active {
     width: 150px;
   }
 }
+
+textarea {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

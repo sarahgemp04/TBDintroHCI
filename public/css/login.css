@@ -1,11 +1,11 @@
-@import url(//fonts.googleapis.com/css?family=Montserrat);
+@import url(//fonts.googleapis.com/css?family=Work+Sans);
 
 *, *:before, *:after {
   box-sizing: border-box;
 }
 
 body {
-  font-family: Montserrat;
+  font-family: Work Sans;
 }
 
 body{
@@ -39,11 +39,11 @@ h1{
 .tab-group li a {
   font-family: inherit;
   font-size: 10;
-  font-weight: 700;
+  font-weight: 500;
   display: block;
   text-decoration: none;
   text-transform: uppercase;
-  padding: 25px 80px;
+  padding: 25px 0px;
   background: rgba(160, 179, 176, 0.25);
   color: #a0b3b0;
   float: left;
