@@ -1,0 +1,102 @@
+{
+	"workouts": {
+			"Neck": [
+			{
+				"name": "Neck Workout 1",
+				"video": "https://www.youtube.com/embed/mVYB9yps4ow"
+			},
+			{
+				"name": "Neck Workout 1",
+				"video": "https://www.youtube.com/embed/r53k_Z2sydI"
+			},
+			{
+				"name": "Neck Workout 1",
+				"video": "https://www.youtube.com/embed/YPiqpLtQbvc"	
+			}
+			],
+			"Chest": [
+			{
+				"name": "Chest Workout 1",
+				"video": "https://www.youtube.com/embed/DUVv_feH7z0"
+			},
+			{ 	
+				"name": "Chest Workout 2",
+				"video": "https://www.youtube.com/embed/IPvVRFcGIBs"
+			},
+			{ 	
+				"name": "Chest Workout 3",
+				"video": "https://www.youtube.com/embed/2uJqvaXAexc"
+			}
+			],
+			"Arms": [
+			{
+				"name": "Arms Workout 1",
+				"video": "https://www.youtube.com/embed/cF0niVnmMY0"
+			},
+			{ 	
+				"name": "Arms Workout 2",
+				"video": "https://www.youtube.com/embed/zU9ig8oaU6E"
+			},
+			{ 	
+				"name": "Arms Workout 3",
+				"video": "https://www.youtube.com/embed/hAGfBjvIRFI"
+			}
+			],
+			"FullBody": [
+			{ 	
+				"name": "fullBody Workout 1",
+				"video": "https://www.youtube.com/embed/695PN9xaEhs"
+			},
+			{ 	
+				"name": "fullBody Workout 2",
+				"video": "https://www.youtube.com/embed/XIeCMhNWFQQ"
+			},
+			{ 	
+				"name": "fullBody Workout 3",
+				"video": "https://www.youtube.com/embed/zd8pDgK-HhQ"
+			}
+			],
+			"Shoulders": [
+			{ 	
+				"name": "Shoulders Workout 1",
+				"video": "https://www.youtube.com/embed/Ut09ow5T26Q"
+			},
+			{ 	
+				"name": "Shoulders Workout 2",
+				"video": "https://www.youtube.com/embed/6EqI5V8AUp8"
+			},
+			{ 	
+				"name": "Shoulders Workout 1",
+				"video": "https://www.youtube.com/embed/yUgFJHp4faA"
+			}
+			],
+			"Abs": [
+			{ 	
+				"name": "Abs Workout 1",
+				"video": "https://www.youtube.com/embed/1919eTCoESo"
+			},
+			{ 	
+				"name": "Abs Workout 2",
+				"video": "https://www.youtube.com/embed/1919eTCoESo"
+			},
+			{ 	
+				"name": "Abs Workout 3",
+				"video": "https://www.youtube.com/embed/1919eTCoESo"
+			}
+			],
+			"Legs": [
+			{ 	
+				"name": "Legs Workout 1",
+				"video": "https://www.youtube.com/embed/yGk0_dzpFA0"
+			},
+			{ 	
+				"name": "Legs Workout 2",
+				"video": "https://www.youtube.com/embed/yGk0_dzpFA0"
+			},
+			{ 	
+				"name": "Legs Workout 3",
+				"video": "https://www.youtube.com/embed/yGk0_dzpFA0"
+			}
+			]
+		}
+}
