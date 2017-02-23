@@ -1,15 +1,21 @@
-@import url(//fonts.googleapis.com/css?family=Montserrat);
-
-body{
-  background: #D3D5D5;
-  font-family: Montserrat;
+@import url(//fonts.googleapis.com/css?family=Work+Sans);
+body {
+    background: #fff;
+    font-family: Work Sans;
+    padding-bottom: 40px;
 }
 
 h1 {
-     text-align: center;
-     font-family: inherit;
-     margin: 40px;
+    text-align: center;
+    font-family: inherit;
+    margin: 40px;
 }
+
+h2 {
+    font-family: inherit;
+    font-size: 20px;
+}
+
 a:link {
     text-decoration: none;
 }
@@ -19,24 +25,31 @@ ul.topnav {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: #282C33;
 }
 
-ul.topnav li {float: left;}
+#logo {
+    width: 130px;
+}
+
+ul.topnav li {
+    float: left;
+}
 
 ul.topnav li a {
-    display: inline-block;
-    color: #f2f2f2;
+    display: block;
+    color: #fff;
     text-align: center;
-    padding: 14px 16px;
+    padding: 12px 16px;
     text-decoration: none;
     transition: 0.3s;
-    font-size: 17px;
+    font-size: 16px;
 }
 
-ul.topnav li a:hover {background-color: #555;}
-
-ul.topnav li.icon {display: none;}
+ul.topnav li.right {
+    float: right;
+    top: 10px;
+}
 
 .btn {
     width: 500px;
@@ -50,10 +63,10 @@ ul.topnav li.icon {display: none;}
     margin: 25px auto;
     letter-spacing: 1px;
     text-transform: uppercase;
-    font-weight: 700;
+    font-weight: 500;
     outline: none;
     position: relative;
-    border-radius:0px;
+    border-radius: 0px;
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     transition: all 0.3s;
@@ -108,7 +121,7 @@ ul.topnav li.icon {display: none;}
 .btn-1e:after {
     width: 30%;
     height: 200%;
-    background: rgba(255,255,255,0.1);
+    background: rgba(255, 255, 255, 0.1);
     z-index: 1;
     right: 0;
     top: 0;
@@ -162,14 +175,14 @@ ul.topnav li.icon {display: none;}
 }
 
 .mainOption {
-     width: 500px;
-     padding: 20px 40px;
-     margin: 25px auto;
-     box-shadow: 1px 2px 3px gray;
-     text-align: center;
-     border: 1px solid gray;
-     border-radius: 3px;
-     display: block;
+    width: 500px;
+    padding: 20px 40px;
+    margin: 25px auto;
+    box-shadow: 1px 2px 3px gray;
+    text-align: center;
+    border: 1px solid gray;
+    border-radius: 3px;
+    display: block;
 }
 
 .mainOption img {
@@ -181,22 +194,22 @@ ul.topnav li.icon {display: none;}
 }
 
 #objects {
-display: -webkit-box;
-display: -moz-box;
-display: -ms-flexbox;
-display: -webkit-flex;
-display: flex;
-flex-flow: row wrap; 
-align-items: flex-start;
-justify-content: flex-start;
--webkit-align-items: flex-end;
-position: absolute;
-bottom: 0;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    -webkit-align-items: flex-end;
+    position: absolute;
+    bottom: 0;
 }
 
 .mainOption:hover {
-     box-shadow: 2px 2px 7px gray;
-     font-style: bold;
+    box-shadow: 2px 2px 7px gray;
+    font-style: bold;
 }
 
 #homeElem {
@@ -217,7 +230,7 @@ bottom: 0;
 }
 
 .jumbotron p {
-     color: #6e6e6e;
+    color: #6e6e6e;
 }
 
 .bodyMap {
@@ -236,7 +249,7 @@ bottom: 0;
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
-    flex-flow: column wrap; 
+    flex-flow: column wrap;
     align-items: flex-start;
     justify-content: flex-end;
     -webkit-align-items: flex-start;
@@ -245,13 +258,13 @@ bottom: 0;
 
 .workoutLeft {
     left: 60px;
-    
 }
+
 .workoutRight {
     align-self: flex-end;
     right: 90px;
-     
 }
+
 .workoutOptions li {
     border-radius: 4px 4px 4px 4px;
     padding: 5px 7px;
@@ -263,15 +276,16 @@ bottom: 0;
     margin-left: 0;
     position: relative;
     text-align: center;
-     -webkit-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     transition: all 0.3s;
 }
+
 .workoutLeft:hover {
     background: #26C6DA;
     margin-left: 8px;
-
 }
+
 .workoutRight:hover {
     background: #26C6DA;
     margin-right: 8px;
@@ -281,12 +295,14 @@ bottom: 0;
     background: #00ACC1;
     top: 2px;
 }
+
 .workoutOptions li a {
     font-family: inherit;
     font-size: 12px;
-    color: white;   
+    color: white;
 }
-.fullBod a{
+
+.fullBod a {
     font-size: 16px;
     font-weight: bold;
     height: 80px;
@@ -300,7 +316,7 @@ bottom: 0;
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
-    flex-flow: row; 
+    flex-flow: row;
     align-items: center;
     justify-content: space-around;
     -webkit-align-items: left;
@@ -312,12 +328,15 @@ bottom: 0;
     box-shadow: 2px 2px 4px gray;
     border-top: solid #a6a6a6 1px;
 }
+
 .tabBar a {
     margin: 0;
     padding: 5px 4px 3px 0px;
+    display: inline-block;
     text-decoration: none;
     color: #26C6DA;
 }
+
 .tabItem {
     text-align: center;
     width: 90px;
@@ -329,14 +348,60 @@ bottom: 0;
     width: 20px;
 }
 
+.botnav {
+    list-style: none;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+ul.botnav li {
+    display: inline-block;
+    margin: auto;
+}
+
+ul.botnav li a {
+    display: block;
+    color: #333;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 10px;
+    margin: auto;
+}
+
+ul.botnav li a:hover {
+    background-color: #00BCD4;
+    color: #fff;
+}
+
+ul.botnav img {
+    width: 10px;
+}
+
+a.active {
+    background-color: #00BCD4;
+    color: #fff;
+}
+
+
 /* Calendar code inspiration found on w3Schools. */
+
 .month {
     padding: 40px 25px;
     width: 100%;
     background: #26C6DA;
 }
 
+
 /* Month list */
+
 .month ul {
     margin: 0;
     padding: 0;
@@ -349,11 +414,13 @@ bottom: 0;
     letter-spacing: 3px;
 }
 
+
 /* Weekdays (Mon-Sun) */
+
 .weekdays {
     margin: 0;
     padding: 20px 0;
-    background-color:#ddd;
+    background-color: #ddd;
 }
 
 .weekdays li {
@@ -363,7 +430,9 @@ bottom: 0;
     text-align: center;
 }
 
+
 /* Days (1-31) */
+
 .days {
     padding: 15px 0;
     background: #eee;
@@ -376,11 +445,13 @@ bottom: 0;
     width: 13.6%;
     text-align: center;
     margin-bottom: 5px;
-    font-size:12px;
-    color:#777;
+    font-size: 12px;
+    color: #777;
 }
 
+
 /* Highlight the "current" day */
+
 .days li .active {
     padding: 5px;
     background: #26C6DA;
@@ -392,37 +463,44 @@ bottom: 0;
 }
 
 @media (max-width: 550px) {
-  .btn {
-    width: 350px;
-  } 
-  .bodyMap {
-    height: 450px;
-    width: 200px;
-  }
-  h1 {
-     font-size: 25px;
-  }
-  .workoutLeft {
-    left: -18px;
-    margin-top: 5px;
-  }
-  .workoutRight {
-    right: -5px;
-  }
-  .workoutOptions li {
-    margin-top: 10px;
-    width: 75px;
-  }
-  .videoContainer iframe {
-    width: 375px;
-  }
+    .btn {
+        width: 350px;
+    }
+    .bodyMap {
+        height: 450px;
+        width: 200px;
+    }
+    h1 {
+        font-size: 25px;
+    }
+    .workoutLeft {
+        left: -18px;
+        margin-top: 5px;
+    }
+    .workoutRight {
+        right: -5px;
+    }
+    .workoutOptions li {
+        margin-top: 10px;
+        width: 75px;
+    }
+    .videoContainer iframe {
+        width: 375px;
+    }
 }
+
 @media (max-width: 349px) {
-  .btn {
-    width: 300px;
-  } 
-  .bodyMap {
-    height: 350px;
-    width: 150px;
-  }
+    .btn {
+        width: 300px;
+    }
+    .bodyMap {
+        height: 350px;
+        width: 150px;
+    }
+}
+
+textarea {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }

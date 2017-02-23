@@ -1,89 +1,67 @@
 <!doctype html>
-
 <html>
-<head>
-	<title> List of Videos for your workout</title>	
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href="/css/bootstrap.min.css" rel="stylesheet">
-	<link href="/css/bootstrap-theme.min.css" rel="stylesheet">
-	<link href="/css/introHCI.css" rel="stylesheet">
-	<!-- this is a comment in HTML -->
-
-	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <head>
+    <title> List of Videos for your workout</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="/css/introHCI.css" rel="stylesheet">
+    <!-- this is a comment in HTML -->
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-      <![endif]-->        
-
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
   </head>
-
   <body>
-  	<div class="container">
-      <a href="bodyMap"> Back </a> <h3> @username </h3>
+    <ul class="topnav" id="topNav">
+      <li><a class="name" href="/"><img id="logo" src="/img/TBD.png"></a></li>
+      <li class="right"><a href="login"><img src="/img/user.png" width="24"></a></li>
+    </ul>
+    <div class="container">
+      
       <h1> {{type}} Workout Results </h1>
-
-<script>
-
-</script>
-{{#each workout}}
-<div class="videoContainer">
-      <h2> {{name}} </h2>
-      <iframe width="560" height="315" src="{{video}}" frameborder="0" allowfullscreen></iframe>
-<br>
-<a href="yourlist?id={{video}}"> + </a>
-<br>
-<a href="#"> - </a>
-<br>
-<a href="#"> Favorite </a>
-<br>
-</div>
-{{/each}}
-
-<!--
-<video width="320" height="240" controls>
-  <source src="movie.mp4" type="video/mp4">
-  <source src="movie.ogg" type="video/ogg">
-  Your browser does not support the video tag.
-</video>
-<br>
-<a href="yourlist"> + </a>
-<br>
-<a href="#"> - </a>
-<br>
-<a href="#"> Favorite </a>
--->
-  	</div>
-<div class="tabBar">
-  <a href="/"><div class="tabItem">
-    <img src="/img/homegray.png">
-    <p><small>Home</small></p>
-  </div></a>
-  <a href=myworkout><div class="tabItem">
-    <img src="/img/weightliftinggray.png">
-    <p><small>My Workout</small></p>
-  </div></a>
-  <a href=dailylog><div class="tabItem">
-    <img src="/img/calendargray.png">
-    <p><small>Daily Log</small></p>
-  </div></a>
-  <a href=favorites><div class="tabItem">
-    <img src="/img/stargray.png">
-    <p><small>Favorites</small></p>
-  </div></a>
-  <a href=notes><div class="tabItem">
-    <img src="/img/notepadgray.png">
-    <p><small>Notes</small></p>
-  </div></a>
-</div>
-
+      <script>
+      </script>
+      {{#each workout}}
+      <div class="videoContainer" style="text-align:center">
+        <h2> {{name}} </h2>
+        <iframe width="560" height="315" src="{{video}}" frameborder="0" allowfullscreen></iframe>
+        <br>
+        <a href="yourlist?id={{video}}"><img src="/img/add.png" width="24"></a>
+        <a href="#"><img src="/img/remove.png" width="24"></a>
+        <a href="#"> <img src="/img/starblack.png" width="24"></a>
+        <p> </p>
+      </div>
+      {{/each}}
+      <!--
+      <video width="320" height="240" controls>
+        <source src="movie.mp4" type="video/mp4">
+        <source src="movie.ogg" type="video/ogg">
+        Your browser does not support the video tag.
+      </video>
+      <br>
+      <a href="yourlist"> + </a>
+      <br>
+      <a href="#"> - </a>
+      <br>
+      <a href="#"> Favorite </a>
+      -->
+    </div>
+    <ul class="botnav" id="botNav">
+      <li><a class="active" href="myworkout">My Workout</a></li>
+      <li><a href="dailylog">Daily Log</a></li>
+      <li><a href="favorites">Favorites</a></li>
+      <li><a href="notes">Notes</a></li>
+    </ul>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
     <script src="/js/jQuery-rwdImageMaps/jquery.rwdImageMaps.min.js"> </script>
   	<script src="https://code.jquery.com/jquery.js"></script>
-  	<script src="/js/bootstrap.min.js"></script>
 
     <script>
     </script>
   </body>
-  </html>
+</html>

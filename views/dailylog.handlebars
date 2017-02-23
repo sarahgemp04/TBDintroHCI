@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>dailylog</title>
+    <title>Daily Log</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap -->
     <link href="/css/bootstrap.min.css" rel="stylesheet">
@@ -16,7 +16,10 @@
     <![endif]-->
   </head>
   <body>
-  <span id="handle">@username</span>
+  <ul class="topnav" id="topNav">
+  <li><a class="name" href="/"><img id="logo" src="/img/TBD.png"></a></li>
+  <li class="right"><a href="login"><img src="/img/user.png" width="24"></a></li>
+  </ul>
   <h1>Daily Log</h1>
 
   <div class="month"> 
@@ -70,6 +73,7 @@
  
 </ul>
 </ul>
+<!--
   <div class="tabBar">
   <a href="/"><div class="tabItem">
     <img src="/img/homegray.png">
@@ -92,7 +96,13 @@
     <p><small>Notes</small></p>
   </div></a>
 </div>
-
+-->
+<ul class="botnav" id="botNav">
+  <li><a href="myworkout">My Workout</a></li>
+  <li><a class="active" href="dailylog">Daily Log</a></li>
+  <li><a href="favorites">Favorites</a></li>
+  <li><a href="notes">Notes</a></li>
+</ul>
     <script src="https://code.jquery.com/jquery.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="/js/bootstrap.min.js"></script>
