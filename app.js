@@ -6,8 +6,9 @@
 var express = require('express');
 var http = require('http');
 var path = require('path');
-var handlebars = require('express3-handlebars')
-
+var handlebars = require('express3-handlebars');
+var bodyParser = require('body-parser');
+var jsonfile = require('jsonfile');
 
 var app = express();
 
@@ -40,6 +41,13 @@ app.use(express.session());
 app.use(app.router);
 app.use(express.static(path.join(__dirname, 'public')));
 
+app.use(bodyParser.text());
+app.use(bodyParser.urlencoded({
+  extended: true
+}));
+app.use(bodyParser.json());
+app.use(bodyParser.raw());
+
 // development only
 if ('development' == app.get('env')) {
   app.use(express.errorHandler());
@@ -47,7 +55,18 @@ if ('development' == app.get('env')) {
 
 // Add routes here
 app.get('/', index.view);
-app.post('/', index.view);
+app.post('/', function(req, res){
+
+	var file = './tmp/data.json';
+jsonfile.readFile(file, function(err, obj) {
+  console.dir(obj);
+  res.render('index', obj
+    //nothing to do
+  );
+})
+	
+	//jsonfile.writeFile(file, obj, function(err) {console.error(err)});
+});
 app.get('/myworkout', myworkout.viewWorkoutScreen);
 app.get('/bodyMap', bodyMap.viewBodyMap);
 app.get('/workoutresults', workoutResults.viewWorkoutResults);
