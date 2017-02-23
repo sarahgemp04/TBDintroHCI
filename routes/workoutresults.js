@@ -1,6 +1,6 @@
 exports.viewWorkoutResults = function(req, res) { 
 	console.log("req id is: " + req.query.id);
-	if(req.query.id == 'neck') {
+	if(req.query.id == 'Neck') {
 	res.render('workoutResults', {
 		'type' : req.query.id, 
 		'workout': [
@@ -18,7 +18,7 @@ exports.viewWorkoutResults = function(req, res) { 
 		}
 		]});
 	}
-	else if(req.query.id == 'chest') {
+	else if(req.query.id == 'Chest') {
 		res.render('workoutResults', {
 			'type' : req.query.id, 
 		'workout': [
@@ -36,7 +36,7 @@ exports.viewWorkoutResults = function(req, res) { 
 		}
 		]});
 	}
-	else if(req.query.id == 'arms') {
+	else if(req.query.id == 'Arms') {
 		res.render('workoutResults', {
 			'type' : req.query.id, 
 		'workout': [
@@ -54,7 +54,7 @@ exports.viewWorkoutResults = function(req, res) { 
 		}
 		]});
 	}
-	else if(req.query.id == 'fullBody') {
+	else if(req.query.id == 'FullBody') {
 		res.render('workoutResults', {
 			'type' : req.query.id, 
 		'workout': [
@@ -72,7 +72,7 @@ exports.viewWorkoutResults = function(req, res) { 
 		}
 		]});
 	}
-	else if(req.query.id == 'shoulders') {
+	else if(req.query.id == 'Shoulders') {
 		res.render('workoutResults', {
 			'type' : req.query.id, 
 		'workout': [
@@ -90,7 +90,7 @@ exports.viewWorkoutResults = function(req, res) { 
 		}
 		]});
 	}
-	else if(req.query.id == 'abs') {
+	else if(req.query.id == 'Abs') {
 		res.render('workoutResults', {
 			'type' : req.query.id, 
 		'workout': [
@@ -108,7 +108,7 @@ exports.viewWorkoutResults = function(req, res) { 
 		}
 		]});
 	}
-	else if(req.query.id == 'legs') {
+	else if(req.query.id == 'Legs') {
 		res.render('workoutResults', {
 			'type' : req.query.id, 
 		'workout': [
