@@ -1,5 +1,8 @@
+var savedNotes = require('../savedNotes.json');
+
 exports.viewNotes = function(req, res) { 
-  res.render('notes', {
-    //nothing to do
-  });
+  console.log(req.query.noted);
+  savedNotes.description = req.query.noted[1];
+  console.log(savedNotes);
+  res.render('notes', savedNotes);
 };

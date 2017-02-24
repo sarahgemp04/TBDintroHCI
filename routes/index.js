@@ -1,23 +1,20 @@
 var jsonfile = require('jsonfile');
+var userJSON = require('../user.json');
 /*
  * GET home page.
  */
 
  exports.view = function(req, res){
 	//jsonfile.writeFile(file, obj, function(err) {console.error(err)});
-	res.render('index', {
-    //nothing to do
-});
+	res.render('index', userJSON);
 };
 
 exports.viewLogin = function(req, res){
-	console.log(req.body.first);
-	console.log(req.body.last);
-	var file = './tmp/data.json';
-	jsonfile.writeFile(file, function(err, obj) {
-		console.dir(obj);
-		res.render('index', obj
-    		//nothing to do
-    	);
-	});
+
+	var name = req.body.first + " " + req.body.last;
+
+	userJSON["name"] = name;
+	console.log(userJSON);
+
+	res.render('index', userJSON);
 };
