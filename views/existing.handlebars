@@ -9,6 +9,7 @@
     <link href="/css/bootstrap-theme.min.css" rel="stylesheet">
     <link href="/css/introHCI.css" rel="stylesheet">
 
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -22,6 +23,13 @@
   <li class="right"><a href="login"><img src="/img/user.png" width="24"></a></li>
 </ul>
   <h1>Daily Log</h1>
+  <h2>{{day}}</h2>
+
+  {{#each workout}}
+  <div class="container videoContainer">
+  <iframe width="560" height="315" src={{video}} frameborder="0" allowfullscreen></iframe>
+  </div>
+  {{/each}}
   <!--
   <div class="tabBar">
   <a href="/"><div class="tabItem">
@@ -46,7 +54,12 @@
   </div></a>
 </div>
 -->
-
+<ul class="botnav" id="botNav">
+  <li><a class="active" href="myworkout">My Workout<img src="weightliftinggray" width="16px" height="16px" display="inline-block"></a></li>
+  <li><a href="dailylog">Daily Log<img src="notepadgray"></a></li>
+  <li><a href="favorites">Favorites<img src="stargray"></a></li>
+  <li><a href="notes">Notes<img src="notepadgray"></a></li>
+</ul>
     <ul class="botnav" id="botNav">
       <li><a class="active" href="myworkout"><img src="/img/weightliftinggray.png"><br>My Workout</a></li>
       <li><a href="dailylog"><img src="/img/calendargray.png"><br>Daily Log</a></li>
@@ -56,5 +69,6 @@
     <script src="https://code.jquery.com/jquery.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/existing.js"></script>
   </body>
 </html>
