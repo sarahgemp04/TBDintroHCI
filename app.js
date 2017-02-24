@@ -69,7 +69,6 @@ app.get('/yourlist', yourlist.viewWorkoutList);
 app.get('/login', login.viewLogin);
 app.get('/existing', existing.viewExisting);
 
-
 // Example route
 // app.get('/users', user.list);
 

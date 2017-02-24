@@ -32,8 +32,8 @@
         <br>
         <!--<a href="yourlist?id={{video}}"><img src="/img/add.png" width="24"></a>-->
           <a href=addWorkoutToList?id={{video}}> <img src="/img/add.png" width="24"></a>
-        <a href="#"><img src="/img/remove.png" width="24"></a>
-        <a href="#"> <img src="/img/starblack.png" width="24"></a>
+        <!-- <a href="#" id="{{video}}"><img src="/img/remove.png" width="24"></a> -->
+        <a href="#" id="{{video}}"> <img src="/img/starblack.png" width="24"></a>
         <p> </p>
       </div>
       {{/each}}
@@ -61,8 +61,19 @@
 
     <script src="/js/jQuery-rwdImageMaps/jquery.rwdImageMaps.min.js"> </script>
   	<script src="https://code.jquery.com/jquery.js"></script>
-
     <script>
+    /*
+    $("a").click(function(e) {
+      try {
+      if(e.target.id == null || e.target.id == "" || e.target.id == undefined) {
+
+      }
+      else {
+        $.get('../routes/favorites.js')
+      }
+    }
+    }
+  ; */
     </script>
   </body>
 </html>
