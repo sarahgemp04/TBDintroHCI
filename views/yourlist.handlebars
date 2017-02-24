@@ -25,12 +25,14 @@
   <li class="right"><a href="login"><img src="/img/user.png" width="24"></a></li>
 </ul>
   	<div class="container">
-      <h1> My Plan </h1>
+      <h1> My List </h1>
 
-      <h2>First workout selected</h2>
+      <h2>Your Main List</h2>
+      {{#each video}}
       <div class="container">
         <iframe width="560" height="315" src="{{video}}" frameborder="0" allowfullscreen></iframe>
       </div>
+      {{/each}}
 
       <a href="notes"> <h3> Add notes </h3> </a>
   	</div>
@@ -65,9 +67,9 @@
   <li><a href="notes">Notes</a></li>
 </ul>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="../public/js/jQuery-rwdImageMaps/jquery.rwdImageMaps.min.js"> </script>
+    <script src="/public/js/jQuery-rwdImageMaps/jquery.rwdImageMaps.min.js"> </script>
   	<script src="https://code.jquery.com/jquery.js"></script>
-  	<script src="../public/js/bootstrap.min.js"></script>
+  	<script src="/public/js/bootstrap.min.js"></script>
 
     <script>
     </script>

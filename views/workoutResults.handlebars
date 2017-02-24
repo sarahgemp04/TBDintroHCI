@@ -28,9 +28,10 @@
       {{#each workout}}
       <div class="videoContainer" style="text-align:center">
         <h2> {{name}} </h2>
-        <iframe width="560" height="315" src="{{video}}" frameborder="0" allowfullscreen></iframe>
+        <iframe width="560" height="315" src={{video}} frameborder="0" allowfullscreen></iframe>
         <br>
-        <a href="yourlist?id={{video}}"><img src="/img/add.png" width="24"></a>
+        <!--<a href="yourlist?id={{video}}"><img src="/img/add.png" width="24"></a>-->
+          <a href=addWorkoutToList?id={{video}}> <img src="/img/add.png" width="24"></a>
         <a href="#"><img src="/img/remove.png" width="24"></a>
         <a href="#"> <img src="/img/starblack.png" width="24"></a>
         <p> </p>

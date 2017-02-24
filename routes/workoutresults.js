@@ -5,7 +5,7 @@ exports.viewWorkoutResults = function(req, res) { 
 
 	if(req.query.id == 'Neck') {	
 		var neckWorkouts = JSON.parse(JSON.stringify(workouts.workouts.Neck));
- 		console.log(workouts);
+ 		console.log(JSON.stringify(neckWorkouts));
 		res.render('workoutResults', {
 			'type' : req.query.id, 
 			'workout': neckWorkouts

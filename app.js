@@ -23,7 +23,8 @@ var yourlist = require('./routes/yourlist');
 var favorites = require('./routes/favorites');
 var dailylog = require('./routes/dailylog');
 var notes = require('./routes/notes');
-var login = require('./routes/login')
+var login = require('./routes/login');
+var addWorkoutToList = require('./routes/addWorkoutToList');
 
 var existing = require('./routes/existing')
 
@@ -68,6 +69,7 @@ jsonfile.readFile(file, function(err, obj) {
 	//jsonfile.writeFile(file, obj, function(err) {console.error(err)});
 });
 app.get('/myworkout', myworkout.viewWorkoutScreen);
+app.get('/addWorkoutToList', addWorkoutToList.addWorkoutToList);
 app.get('/bodyMap', bodyMap.viewBodyMap);
 app.get('/workoutresults', workoutResults.viewWorkoutResults);
 app.get('/favorites', favorites.viewfavorites);
@@ -76,6 +78,7 @@ app.get('/notes', notes.viewNotes);
 app.get('/yourlist', yourlist.viewWorkoutList);
 app.get('/login', login.viewLogin);
 app.get('/existing', existing.viewExisting);
+
 
 // Example route
 // app.get('/users', user.list);
