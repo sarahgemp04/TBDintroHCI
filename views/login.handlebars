@@ -25,21 +25,21 @@
       <div class="tab-content">
         <div id="signup">   
           
-          <form action="/" method="post" enctype="multipart/form-data">
+          <form action="/" method="post">
           
           <div class="top-row">
             <div class="field-wrap">
               <label>
                 First Name<span class="req">*</span>
               </label>
-              <input type="text" required autocomplete="off" />
+              <input name="first" type="text" required autocomplete="off" />
             </div>
         
             <div class="field-wrap">
               <label>
                 Last Name<span class="req">*</span>
               </label>
-              <input type="text"required autocomplete="off"/>
+              <input name="last" type="text"required autocomplete="off"/>
             </div>
           </div>
 
@@ -47,14 +47,14 @@
             <label>
               Email Address<span class="req">*</span>
             </label>
-            <input type="email"required autocomplete="off"/>
+            <input name="email" type="email"required autocomplete="off"/>
           </div>
           
           <div class="field-wrap">
             <label>
               Set A Password<span class="req">*</span>
             </label>
-            <input type="password"required autocomplete="off"/>
+            <input name="password" type="password"required autocomplete="off"/>
           </div>
           
           <button type="submit" class="button button-block"/>Get Started</button>

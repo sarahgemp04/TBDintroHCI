@@ -55,18 +55,8 @@ if ('development' == app.get('env')) {
 
 // Add routes here
 app.get('/', index.view);
-app.post('/', function(req, res){
-
-	var file = './tmp/data.json';
-jsonfile.readFile(file, function(err, obj) {
-  console.dir(obj);
-  res.render('index', obj
-    //nothing to do
-  );
-})
-	
+app.post('/', index.viewLogin);
 	//jsonfile.writeFile(file, obj, function(err) {console.error(err)});
-});
 app.get('/myworkout', myworkout.viewWorkoutScreen);
 app.get('/bodyMap', bodyMap.viewBodyMap);
 app.get('/workoutresults', workoutResults.viewWorkoutResults);
