@@ -29,7 +29,7 @@
 
       <h2>Your Main List</h2>
       {{#each video}}
-      <div class="container">
+      <div class="videoContainer" style="text-align:center">
         <iframe width="560" height="315" src="{{video}}" frameborder="0" allowfullscreen></iframe>
       </div>
       {{/each}}
@@ -62,7 +62,7 @@
 -->
 <ul class="botnav" id="botNav">
   <li><a href="myworkout">My Workout</a></li>
-  <li><a href="dailylog">Daily Log</a></li>
+  <li><a class="active" href="dailylog">Daily Log</a></li>
   <li><a href="favorites">Favorites</a></li>
   <li><a href="notes">Notes</a></li>
 </ul>
