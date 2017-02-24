@@ -393,6 +393,9 @@ a.active {
 
 /* Calendar code inspiration found on w3Schools. */
 
+.calendar {
+    box-shadow: 2px 2px 6px #666
+}
 .month {
     padding: 40px 25px;
     width: 100%;
@@ -425,7 +428,7 @@ a.active {
 
 .weekdays li {
     display: inline-block;
-    width: 13%;
+    width: 12%;
     color: #666;
     text-align: center;
 }
@@ -442,7 +445,7 @@ a.active {
 .days li {
     list-style-type: none;
     display: inline-block;
-    width: 13.6%;
+    width: 12%;
     text-align: center;
     margin-bottom: 5px;
     font-size: 12px;
