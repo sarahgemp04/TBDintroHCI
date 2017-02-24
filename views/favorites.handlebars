@@ -45,6 +45,11 @@
   </div></a>
 </div>
 -->
+      {{#each favorites}}
+      <div class="videoContainer" style="text-align:center">
+        <iframe width="560" height="315" src="{{video}}" frameborder="0" allowfullscreen></iframe>
+      </div>
+      {{/each}}
     <ul class="botnav" id="botNav">
       <li><a href="myworkout"><img src="/img/weightliftinggray.png"><br>My Workout</a></li>
       <li><a href="dailylog"><img src="/img/calendargray.png"><br>Daily Log</a></li>
