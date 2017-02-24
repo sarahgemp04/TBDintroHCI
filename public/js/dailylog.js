@@ -1,8 +1,12 @@
 'use strict';
+var isHidden = true;
+var href = "";
 
 // Call this function when the page loads (the "ready" event)
 $(document).ready(function() {
+	isHidden = true;
 	initializePage();
+
 })
 
 /*
@@ -10,11 +14,25 @@ $(document).ready(function() {
  */
 function initializePage() {
 	console.log("Javascript connected!");
-    $(".days li").click(dayClicked(this.text));
-    console.log(this.text)
+	if(!isHidden) {
+		$("#calendarAddDiv").css("display", "inline-block");
+		$("#calendarAddDiv a").attr("href", href);
+		console.log(href);
+		console.log($("#calendarAddDiv a").attr("href"));
+	} else {
+		$("#calendarAddDiv").css("display", "none")
+	}
+
+	//$(".days.day").click(dayClicked($(this).attr("id")));
 }
 
 function dayClicked(day) {
-    e.preventDefault();
-    console.log(day);
+	
+	console.log("Function was called" + day );
+	$("#calendarAddDiv").css("display", "inline-block");
+	window.href = "bodyMap?id=" + day;
+
+	window.isHidden = false;
+	initializePage();
+	return false;
 }
