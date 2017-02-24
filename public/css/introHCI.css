@@ -388,7 +388,7 @@ ul.botnav img {
     width: 10px;
 }
 
-a.active {
+ul.botnav li a.active {
     background-color: #00BCD4;
     color: #fff;
 }
