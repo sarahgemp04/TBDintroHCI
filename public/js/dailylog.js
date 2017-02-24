@@ -35,7 +35,7 @@ function dayClicked(day) {
 	console.log("Function was called" + day );
 	$("#calendarAddDiv").css("display", "inline-block");
 	window.href = "bodyMap?id=" + day;
-	window.pText = "Add a workout to the " + day;
+	window.pText = "Add a workout to February " + day;
 	console.log(pText);
 	window.isHidden = false;
 	initializePage();
