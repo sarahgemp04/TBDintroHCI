@@ -61,7 +61,10 @@ app.post('/', index.viewLogin);
 	//jsonfile.writeFile(file, obj, function(err) {console.error(err)});
 app.get('/myworkout', myworkout.viewWorkoutScreen);
 app.get('/addWorkoutToList', addWorkoutToList.addWorkoutToList);
+
  app.get('/addWorkoutToList/dropdown', addWorkoutToList.addDropdownWorkoutToList);
+
+
 app.get('/bodyMap', bodyMap.viewBodyMap);
 app.get('/workoutresults', workoutResults.viewWorkoutResults);
 app.get('/favorites', favorites.viewfavorites);
