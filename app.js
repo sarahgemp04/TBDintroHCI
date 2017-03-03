@@ -59,8 +59,8 @@ if ('development' == app.get('env')) {
 app.get('/', index.view);
 app.post('/', index.viewLogin);
 	//jsonfile.writeFile(file, obj, function(err) {console.error(err)});
-app.get('/myworkout', myworkout.viewWorkoutScreen);
-app.get('/addWorkoutToList', addWorkoutToList.addDropdownWorkoutToList);
+ app.get('/myworkout', myworkout.viewWorkoutScreen);
+ app.get('/addWorkoutToList', addWorkoutToList.addWorkoutToList);
 
  app.get('/addWorkoutToList/dropdown', addWorkoutToList.addDropdownWorkoutToList);
 
