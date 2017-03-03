@@ -10,7 +10,7 @@ $(document).ready(function() {
  */
 function initializePage() {
 	console.log("Javascript connected!");
-    $(".days li).click(dayClicked);
+    $(".days li").click(dayClicked);
 }
 
 function dayClicked(day) {

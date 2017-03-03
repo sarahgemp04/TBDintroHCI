@@ -8,6 +8,7 @@
 	<link href="/css/bootstrap.min.css" rel="stylesheet">
 	<link href="/css/bootstrap-theme.min.css" rel="stylesheet">
 	<link href="/css/introHCI.css" rel="stylesheet">
+  
 	<!-- this is a comment in HTML -->
 
 	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -27,26 +28,24 @@
   	<div class="container">
       <h1> My List </h1>
 
-      <h2>Your Main List</h2>
-
-        
+      <h2>Your Main List</h2>       
 
       {{#if dropdown}}
       
       {{#each workout}}
+      <div class="dropElement">
+          <a href=# style="width: 100%; font-size: 20px;margin:50px 0 10px 0; padding: 15px; border-top: solid black 1px; border-bottom: solid black 1px;" class="dropTitle" >{{name}} Workout</a>
 
-        <div class="drop-element">
-          <span style="font-size:20px; position: relative; left: 0; margin-left: 15px;">{{name}} Workout</span><a style="position: relative; right: 0; margin-right: 10px;" class="dropdownClick" href=#>Arrow</a>
-
-          <div class="drop-box" style="visibility:visible;">
+          <div style="margin-top: 15px; text-align: center;visibility: hidden"class="drop-box" id={{video}} >
            
               <h4>Your Video:</h4> 
-              <iframe style="display: inline-block; width: 200px; height: 200px; margin: 10px auto 10px auto;" src={{video}} frameborder="0" allowfullscreen></iframe></br>
+              <iframe style="width: 50%; height: 250px; margin: 10px 25% 10px 25%" src={{video}} frameborder="0" allowfullscreen></iframe></br>
               {{Description}}
               <a href={{info}} style="color: #00BCD4;">Learn more and get some fitspiration here!</a>
           </div>
-          {{/each}}
-        </div>
+      </div>
+          
+        {{/each}}
       
       
       {{else}}
@@ -92,13 +91,10 @@
   <li><a href="notes"><img src="/img/notepadgray.png"><br>Notes</a></li>
 </ul>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>-->
+   <script src="https://code.jquery.com/jquery.js"></script>
 
-  	<script src="https://code.jquery.com/jquery.js"></script>
-        <script src="/public/js/yourlist.js"></script>
+  <script src="/js/yourlist.js"></script>
 
-
-    <script>
-    </script>
   </body>
   </html>

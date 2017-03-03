@@ -12,8 +12,7 @@ exports.addWorkoutToList = function(req, res) { 
        'info': req.query.info,
        'Description': req.query.desc
     }
-
-    listToAdd.workouts["dropdown"] = false;
+    listToAdd["dropdown"] = false;
 
     listToAdd.workouts.push(newListItem);
     console.log(listToAdd);

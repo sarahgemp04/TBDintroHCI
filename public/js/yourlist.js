@@ -10,10 +10,19 @@ $(document).ready(function() {
  */
 function initializePage() {
 	console.log("Javascript connected!");
-    $("#drop-element").click(dropdownClicked);
+	$(".dropTitle").click(dropClicked);
 }
 
-function dropdownClicked() {
-	console.log("made it");
-	$(".drop-box").style.visibility = "hidden";
+function dropClicked() {
+	console.log("inside dropClicked");
+		console.log(this.parentElement.childNodes[3]);
+	var drop = this.parentElement.childNodes[3];
+	if(drop.style.visibility == "hidden") {
+		drop.style.visibility = "visible"
+	} else {
+		drop.style.visibility = "hidden";
+	}
+
+
+	//console.log("made it");
 }
