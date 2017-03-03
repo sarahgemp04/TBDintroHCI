@@ -9,20 +9,7 @@ exports.viewWorkoutResults = function(req, res) { 
 		res.render('workoutResults', {
 			'type' : req.query.id, 
 			'workout': neckWorkouts
-			/*[
-			{ 	
-				'name': 'Neck Workout 1',
-				'video': 'https://www.youtube.com/embed/mVYB9yps4ow',
-			},
-			{ 	
-				'name': 'Neck Workout 2',
-				'video': 'https://www.youtube.com/embed/r53k_Z2sydI',
-			},
-			{ 	
-				'name': 'Neck Workout 3',
-				'video': 'https://www.youtube.com/embed/YPiqpLtQbvc',
-			}
-			]*/
+			
 		});
 	}
 	else if(req.query.id == 'Chest') {
@@ -30,20 +17,7 @@ exports.viewWorkoutResults = function(req, res) { 
 		res.render('workoutResults', {
 			'type' : req.query.id, 
 			'workout': chestWorkouts
-			/*[
-			{ 	
-				'name': 'Chest Workout 1',
-				'video': 'https://www.youtube.com/embed/DUVv_feH7z0',
-			},
-			{ 	
-				'name': 'Chest Workout 2',
-				'video': 'https://www.youtube.com/embed/IPvVRFcGIBs',
-			},
-			{ 	
-				'name': 'Chest Workout 3',
-				'video': 'https://www.youtube.com/embed/2uJqvaXAexc',
-			}
-			]*/
+			
 		});
 	}
 	else if(req.query.id == 'Arms') {
@@ -51,20 +25,7 @@ exports.viewWorkoutResults = function(req, res) { 
 		res.render('workoutResults', {
 			'type' : req.query.id, 
 			'workout': armWorkouts
-			/*[
-			{ 	
-				'name': 'Chest Workout 1',
-				'video': 'https://www.youtube.com/embed/DUVv_feH7z0',
-			},
-			{ 	
-				'name': 'Chest Workout 2',
-				'video': 'https://www.youtube.com/embed/IPvVRFcGIBs',
-			},
-			{ 	
-				'name': 'Chest Workout 3',
-				'video': 'https://www.youtube.com/embed/2uJqvaXAexc',
-			}
-			]*/
+			
 		});
 	}
 	else if(req.query.id == 'FullBody') {
@@ -72,20 +33,7 @@ exports.viewWorkoutResults = function(req, res) { 
 		res.render('workoutResults', {
 			'type' : req.query.id, 
 			'workout': fullBodyWorkouts
-			/*[
-			{ 	
-				'name': 'Chest Workout 1',
-				'video': 'https://www.youtube.com/embed/DUVv_feH7z0',
-			},
-			{ 	
-				'name': 'Chest Workout 2',
-				'video': 'https://www.youtube.com/embed/IPvVRFcGIBs',
-			},
-			{ 	
-				'name': 'Chest Workout 3',
-				'video': 'https://www.youtube.com/embed/2uJqvaXAexc',
-			}
-			]*/
+			
 		});
 	}
 	else if(req.query.id == 'Shoulders') {
@@ -93,20 +41,7 @@ exports.viewWorkoutResults = function(req, res) { 
 		res.render('workoutResults', {
 			'type' : req.query.id, 
 			'workout': shoulderWorkouts
-			/*[
-			{ 	
-				'name': 'Chest Workout 1',
-				'video': 'https://www.youtube.com/embed/DUVv_feH7z0',
-			},
-			{ 	
-				'name': 'Chest Workout 2',
-				'video': 'https://www.youtube.com/embed/IPvVRFcGIBs',
-			},
-			{ 	
-				'name': 'Chest Workout 3',
-				'video': 'https://www.youtube.com/embed/2uJqvaXAexc',
-			}
-			]*/
+			
 		});
 	}
 	else if(req.query.id == 'Abs') {
@@ -114,20 +49,7 @@ exports.viewWorkoutResults = function(req, res) { 
 		res.render('workoutResults', {
 			'type' : req.query.id, 
 			'workout': abWorkouts
-			/*[
-			{ 	
-				'name': 'Chest Workout 1',
-				'video': 'https://www.youtube.com/embed/DUVv_feH7z0',
-			},
-			{ 	
-				'name': 'Chest Workout 2',
-				'video': 'https://www.youtube.com/embed/IPvVRFcGIBs',
-			},
-			{ 	
-				'name': 'Chest Workout 3',
-				'video': 'https://www.youtube.com/embed/2uJqvaXAexc',
-			}
-			]*/
+			
 		});
 	}
 	else if(req.query.id == 'Legs') {
@@ -135,20 +57,7 @@ exports.viewWorkoutResults = function(req, res) { 
 		res.render('workoutResults', {
 			'type' : req.query.id, 
 			'workout': legWorkouts
-			/*[
-			{ 	
-				'name': 'Chest Workout 1',
-				'video': 'https://www.youtube.com/embed/DUVv_feH7z0',
-			},
-			{ 	
-				'name': 'Chest Workout 2',
-				'video': 'https://www.youtube.com/embed/IPvVRFcGIBs',
-			},
-			{ 	
-				'name': 'Chest Workout 3',
-				'video': 'https://www.youtube.com/embed/2uJqvaXAexc',
-			}
-			]*/
+			
 		});
 	}
 };

@@ -1,30 +1,45 @@
 var listToAdd = require("../yourList.json");
 
+
+
 exports.addWorkoutToList = function(req, res) {    
     console.log("addWorkoutToList called");
-    console.log("This is the id of the video to be added (should be the vid url)", req.query.id);
-    var vid = JSON.parse(JSON.stringify(req.query.id));
-    console.log(vid);
+    
 
     var newListItem = {
-       video: vid
+       'video': req.query.id,
+       'name': req.query.name,
+       'info': req.query.info,
+       'Description': req.query.desc
     }
 
-    listToAdd.video.push(newListItem);
+    listToAdd.workouts["dropdown"] = false;
+
+    listToAdd.workouts.push(newListItem);
+    console.log(listToAdd);
+
+    res.redirect('yourlist');
+    
+}
+
+exports.addDropdownWorkoutToList = function(req, res) {    
+    console.log("adddropdownWorkoutToList called");
+    console.log(req.query.name);
+
+    
+
+    listToAdd["dropdown"] = true;
+    var newListItem = {
+       'video': req.query.id,
+       'name': req.query.name,
+       'info': req.query.info,
+       'Description': req.query.desc
+    }
+
+    listToAdd.workouts.push(newListItem);
     console.log(listToAdd);
 
     res.redirect('yourlist');
 
-    /*var description = req.query.description;
-
-    var newFriend = {
-        name: friend,
-        description: description,
-        imageURL: "http://lorempixel.com/400/400/people"
-    }
-
-    data.friends.push(newFriend);
-
-    res.redirect('/');
-    console.log()*/
+    
 }

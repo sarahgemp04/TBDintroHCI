@@ -1,7 +1,21 @@
 var yourlist = require("../yourList.json");
 
 exports.viewWorkoutList = function(req, res) { 
-	    var videoDict = JSON.parse(JSON.stringify(yourlist));
- 		console.log("This is the video dictionary you're looping through",videoDict);
-		res.render('yourlist', videoDict);
+
+	    var workouts = JSON.parse(JSON.stringify(yourlist.workouts));
+	    		console.log(workouts);
+	    var bool = yourlist["dropdown"];
+	    console.log(bool);
+	    if(bool) {
+	    	bool = true;
+	    } else {
+	    	bool = false;
+	    }
+
+ 		console.log("This is the video dictionary you're looping through", workouts);
+		res.render('yourlist', {
+			'workout': workouts,
+			'dropdown': bool
+		});
+
 };

@@ -61,6 +61,7 @@ app.post('/', index.viewLogin);
 	//jsonfile.writeFile(file, obj, function(err) {console.error(err)});
 app.get('/myworkout', myworkout.viewWorkoutScreen);
 app.get('/addWorkoutToList', addWorkoutToList.addWorkoutToList);
+// OR THIS ONE app.get('/addWorkoutToList', addWorkoutToList.addDropdownToList);
 app.get('/bodyMap', bodyMap.viewBodyMap);
 app.get('/workoutresults', workoutResults.viewWorkoutResults);
 app.get('/favorites', favorites.viewfavorites);

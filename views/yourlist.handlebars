@@ -28,12 +28,37 @@
       <h1> My List </h1>
 
       <h2>Your Main List</h2>
-      {{#each video}}
+
+        
+
+      {{#if dropdown}}
+      
+      {{#each workout}}
+
+        <div class="drop-element">
+          <span style="font-size:20px; position: relative; left: 0; margin-left: 15px;">{{name}} Workout</span><a style="position: relative; right: 0; margin-right: 10px;" class="dropdownClick" href=#>Arrow</a>
+
+          <div class="drop-box" style="visibility:visible;">
+           
+              <h4>Your Video:</h4> 
+              <iframe style="display: inline-block; width: 200px; height: 200px; margin: 10px auto 10px auto;" src={{video}} frameborder="0" allowfullscreen></iframe></br>
+              {{Description}}
+              <a href={{info}} style="color: #00BCD4;">Learn more and get some fitspiration here!</a>
+          </div>
+          {{/each}}
+        </div>
+      
+      
+      {{else}}
+
+
+      {{#each workout}}
       <div class="videoContainer" style="text-align:center">
+        <h2>{{name}} {{type}} workout</h2>
         <iframe width="560" height="315" src="{{video}}" frameborder="0" allowfullscreen></iframe>
       </div>
       {{/each}}
-
+      {{/if}}
       <a href="notes"> <h3> Add notes </h3> </a>
   	</div>
     <!--

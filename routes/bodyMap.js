@@ -13,7 +13,6 @@ exports.viewBodyMap = function(req, res) { 
     console.log(day);
     var day  = days.days[day];
     var title = 
-  	console.log(weekDay);
   	res.render('bodyMap', {
   		'title': "Friday",
       'day': req.query.id
