@@ -11,10 +11,9 @@ exports.viewBodyMap = function(req, res) { 
   } else {
   	var day = req.query.id;
     console.log(day);
-    //day = JSON.parse(JSON.stringify(days.days.day));
-    //console.log(day);
-    //weekDay = JSON.parse(JSON.stringify(day["title"]));
-  	//console.log(weekDay);
+    var day  = days.days[day];
+    var title = 
+  	console.log(weekDay);
   	res.render('bodyMap', {
   		'title': "Friday",
       'day': req.query.id
