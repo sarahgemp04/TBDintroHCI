@@ -1,15 +1,15 @@
 <!doctype html>
 <html>
-  <head>
-    <title> List of Videos for your workout</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/css/bootstrap-theme.min.css" rel="stylesheet">
-    <link href="/css/introHCI.css" rel="stylesheet">
-    <!-- this is a comment in HTML -->
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<head>
+  <title> List of Videos for your workout</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/css/bootstrap-theme.min.css" rel="stylesheet">
+  <link href="/css/introHCI.css" rel="stylesheet">
+  <!-- this is a comment in HTML -->
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
@@ -17,11 +17,11 @@
   </head>
   <body>
     <ul class="topnav" id="topNav">
-      <li><a class="name" href="/"><img id="logo" src="/img/TBD.png"></a></li>
+      <li><a class="name" href="/"><img id="logo" src="/img/TBDLogo.png"></a></li>
       <li class="right"><a href="login"><img src="/img/user.png" width="24"></a></li>
     </ul>
     <div class="container">
-      
+
       <h1> {{type}} Workout Results </h1>
       <script>
       </script>
@@ -31,9 +31,9 @@
         <iframe width="560" height="315" src={{video}} frameborder="0" allowfullscreen></iframe>
         <br>
         <!--<a href="yourlist?id={{video}}"><img src="/img/add.png" width="24"></a>-->
-          <a href=addWorkoutToList?id={{video}}> <img src="/img/add.png" width="24"></a>
-        <a href="#"><img src="/img/remove.png" width="24"></a>
-        <a href="#"> <img src="/img/starblack.png" width="24"></a>
+        <a href=addWorkoutToList?id={{video}}> <img src="/img/add.png" width="24"></a>
+        <!-- <a href="#" id="{{video}}"><img src="/img/remove.png" width="24"></a> -->
+        <button class="test" type="button" href="#" id="{{video}}"> <img src="/img/starblack.png" width="24"></button>
         <p> </p>
       </div>
       {{/each}}
@@ -49,20 +49,27 @@
       <a href="#"> - </a>
       <br>
       <a href="#"> Favorite </a>
-      -->
-    </div>
-    <ul class="botnav" id="botNav">
-      <li><a class="active" href="myworkout"><img src="/img/weightliftinggray.png"><br>My Workout</a></li>
-      <li><a href="dailylog"><img src="/img/calendargray.png"><br>Daily Log</a></li>
-      <li><a href="favorites"><img src="/img/stargray.png"><br>Favorites</a></li>
-      <li><a href="notes"><img src="/img/notepadgray.png"><br>Notes</a></li>
-    </ul>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    -->
+  </div>
+  <ul class="botnav" id="botNav">
+    <li><a class="active" href="myworkout"><img src="/img/weightliftinggray.png"><br>My Workout</a></li>
+    <li><a href="dailylog"><img src="/img/calendargray.png"><br>Daily Log</a></li>
+    <li><a href="favorites"><img src="/img/stargray.png"><br>Favorites</a></li>
+    <li><a href="notes"><img src="/img/notepadgray.png"><br>Notes</a></li>
+  </ul>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
-    <script src="/js/jQuery-rwdImageMaps/jquery.rwdImageMaps.min.js"> </script>
-  	<script src="https://code.jquery.com/jquery.js"></script>
+  <script src="/js/jQuery-rwdImageMaps/jquery.rwdImageMaps.min.js"> </script>
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script>
+    $(document).ready(function() {
+      $(".test").click(function(e) {
+        console.log("test");
+        console.log(this.id);
+        $.get('addFavorite?id=' + this.id);
+      });
 
-    <script>
-    </script>
-  </body>
+    });
+  </script>
+</body>
 </html>
