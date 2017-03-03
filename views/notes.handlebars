@@ -21,9 +21,9 @@
     </ul>
     <h1>Notes</h1>
     <!-- <button id="add" type="button"> Add Note </button> -->
-    <form action="notes" method="get">
+    <form id="saveNote" method="get">
       <div class="container notes">
-        <textarea name="noted" rows="4" cols="40" placeholder="Enter Notes Here">{{description}}</textarea>
+        <textarea id="areaNote" name="noted" rows="4" cols="40" placeholder="Enter Notes Here">{{description}}</textarea>
       </div>
       <br>
       <button name="noted" type="submit">Save</button>
@@ -37,6 +37,7 @@
     <script src="https://code.jquery.com/jquery.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/notes.js"></script>
     <script>
     $('#add').click( function() {
     $('.newNote').append('<textarea rows="4" cols="40" placeholder="Enter' + 'Notes Here"></textarea>');
