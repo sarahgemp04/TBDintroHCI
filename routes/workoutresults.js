@@ -5,7 +5,8 @@ exports.viewWorkoutResults = function(req, res) { 
 
 	if(req.query.id == 'Neck') {	
 		var neckWorkouts = JSON.parse(JSON.stringify(workouts.workouts.Neck));
- 		console.log(JSON.stringify(neckWorkouts));
+ 		console.log(neckWorkouts);
+ 		console.log("printed neckWorkouts from workoutresults");
 		res.render('workoutResults', {
 			'type' : req.query.id, 
 			'workout': neckWorkouts

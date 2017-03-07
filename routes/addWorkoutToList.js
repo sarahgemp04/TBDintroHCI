@@ -6,16 +6,20 @@ exports.addWorkoutToList = function(req, res) { 
     console.log("addWorkoutToList called");
     
 
+    listToAdd["dropdown"] = false;
     var newListItem = {
        'video': req.query.id,
        'name': req.query.name,
        'info': req.query.info,
        'Description': req.query.desc
     }
-    listToAdd["dropdown"] = false;
-
+    
+    console.log("this is the workout you're adding not in dropdown.");
+    console.log(newListItem);
     listToAdd.workouts.push(newListItem);
+    console.log("this is the entire list now");
     console.log(listToAdd);
+
 
     res.redirect('yourlist');
     

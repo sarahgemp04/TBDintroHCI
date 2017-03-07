@@ -15,12 +15,17 @@ function initializePage() {
 
 function dropClicked() {
 	console.log("inside dropClicked");
-		console.log(this.parentElement.childNodes[3]);
+		console.log(this.parentElement.childNodes[2]);
+				console.log(this.parentElement.childNodes[3]);
+		console.log(this.parentElement.childNodes[4]);
+		console.log(this.parentElement.childNodes[5]);
+		console.log(this.parentElement.childNodes[1]);
+
 	var drop = this.parentElement.childNodes[3];
-	if(drop.style.visibility == "hidden") {
-		drop.style.visibility = "visible"
+	if(drop.style.display == "none") {
+		drop.style.display = "inline-block"
 	} else {
-		drop.style.visibility = "hidden";
+		drop.style.display = "none";
 	}
 
 
