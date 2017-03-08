@@ -5,13 +5,12 @@ var listToAdd = require("../yourList.json");
 exports.addWorkoutToList = function(req, res) {    
     console.log("addWorkoutToList called");
     
-
-    listToAdd["dropdown"] = false;
+    var bool = listToAdd['dropdown'];
     var newListItem = {
        'video': req.query.id,
        'name': req.query.name,
        'info': req.query.info,
-       'Description': req.query.desc
+       'Description': req.query.desc,
     }
     
     console.log("this is the workout you're adding not in dropdown.");
@@ -25,7 +24,7 @@ exports.addWorkoutToList = function(req, res) { 
     
 }
 
-exports.addDropdownWorkoutToList = function(req, res) {    
+/*exports.addDropdownWorkoutToList = function(req, res) {    
     console.log("adddropdownWorkoutToList called");
     console.log(req.query.name);
 
@@ -45,4 +44,4 @@ exports.addDropdownWorkoutToList = function(req, res) { 
     res.redirect('yourlist');
 
     
-}
+}*/

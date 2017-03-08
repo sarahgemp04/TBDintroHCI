@@ -1,5 +1,11 @@
 exports.viewWorkoutScreen = function(req, res) { 
   res.render('myworkout', {
-    //nothing to do
+    'dropdown': false
   });
 };
+
+/*exports.viewDropdownWorkoutScreen = function(req, res) { 
+  res.render('myworkout', {
+    'dropdown': true
+  });
+};*/

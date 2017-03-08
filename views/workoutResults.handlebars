@@ -24,19 +24,19 @@
 
 
       <h1> {{type}} Workout Results </h1>
-      
       {{#each workout}}
       <div class="videoContainer" style="text-align:center">
         <h2> {{name}} </h2>
         <iframe width="560" height="315" src={{video}} frameborder="0" allowfullscreen></iframe>
         <br>
         <!--<a href="yourlist?id={{video}}"><img src="/img/add.png" width="24"></a>-->
-        <a href=addWorkoutToList/dropdown?id={{video}}&name={{name}}&desc={{Description}}&info={{info}}> <img src="/img/add.png" width="24"></a>
+        <a href=addWorkoutToList?id={{video}}&name={{name}}&desc={{Description}}&info={{info}}> <img src="/img/add.png" width="24"></a>
         <!-- <a href="#" id="{{video}}"><img src="/img/remove.png" width="24"></a> -->
         <button class="test" type="button" href="#" id="{{video}}"> <img src="/img/starblack.png" width="24"></button>
         <p> </p>
       </div>
-      {{/each}}
+      {{/each}}   
+
     
       <!--
       <video width="320" height="240" controls>

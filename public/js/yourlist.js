@@ -13,13 +13,10 @@ function initializePage() {
 	$(".dropTitle").click(dropClicked);
 }
 
-function dropClicked() {
+function dropClicked(e) {
 	console.log("inside dropClicked");
-		console.log(this.parentElement.childNodes[2]);
-				console.log(this.parentElement.childNodes[3]);
-		console.log(this.parentElement.childNodes[4]);
-		console.log(this.parentElement.childNodes[5]);
-		console.log(this.parentElement.childNodes[1]);
+		
+	e.preventDefault();
 
 	var drop = this.parentElement.childNodes[3];
 	if(drop.style.display == "none") {
