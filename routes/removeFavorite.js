@@ -6,7 +6,8 @@ exports.remove = function(req, res) { 
 
 	for(var i = 0; i < savedFavorites.length; i++) {
     	if(savedFavorites[i] == req.query.id) {
-    		delete savedFavorites[i];
+    		console.log("found it and trying to remove");
+    		delete savedFavorites[i]['video'];
     	}
 	}
 	console.log(savedFavorites);
