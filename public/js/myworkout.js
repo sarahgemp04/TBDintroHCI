@@ -9,5 +9,11 @@ $(document).ready(function() {
  * Function that is called when the document is ready.
  */
 function initializePage() {
-	// add any functionality and listeners you want here
+	console.log("Javascript connected!");
+    $("#yourlistbtn").click(dayClicked);
 }
+
+function existingClicked() {
+    ga("send", "event", 'dropdown', 'click');
+}
+
