@@ -32,7 +32,7 @@
         <!--<a href="yourlist?id={{video}}"><img src="/img/add.png" width="24"></a>-->
         <a href=addWorkoutToList?id={{video}}&name={{name}}&desc={{Description}}&info={{info}}> <img src="/img/add.png" width="24"></a>
         <!-- <a href="#" id="{{video}}"><img src="/img/remove.png" width="24"></a> -->
-        <button class="test" type="button" href="#" id="{{video}}"> <img src="/img/starblack.png" width="24"></button>
+        <a class="test" href="#" id="{{video}}"> <img src="/img/starblack.png" width="24"></a>
         <p> </p>
       </div>
       {{/each}}   
@@ -68,6 +68,15 @@
         console.log("test");
         console.log(this.id);
         $.get('addFavorite?id=' + this.id);
+
+        var currColor = $(this).css("color");
+        console.log(currColor);
+        if(currColor == "rgb(42, 100, 150)") {
+          $(this).css("color", "yellow");
+        }
+        else {
+          $(this).css("color", "black");
+        }
       });
 
     });
