@@ -9,8 +9,11 @@ var path = require('path');
 var handlebars = require('express3-handlebars');
 var bodyParser = require('body-parser');
 var jsonfile = require('jsonfile');
+var lookup = require('lookup');
 
 var app = express();
+
+//other code
 
 // all environments
 app.set('port', process.env.PORT || 3000);
