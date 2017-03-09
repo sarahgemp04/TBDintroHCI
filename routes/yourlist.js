@@ -13,7 +13,6 @@ exports.viewWorkoutList = function(req, res) { 
 			'dropdown': bool
 		});
 
-		//ga("send", "event", 'dropdown', 'click');
 
 
 };
