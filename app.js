@@ -57,16 +57,21 @@ if ('development' == app.get('env')) {
 
 // Add routes here
 app.get('/', index.view);
+app.get('/dropdown', index.viewDropdown);
 app.post('/', index.viewLogin);
 	//jsonfile.writeFile(file, obj, function(err) {console.error(err)});
- app.get('/myworkout', myworkout.viewWorkoutScreen);
- app.get('/addWorkoutToList', addWorkoutToList.addWorkoutToList);
+app.get('/myworkout', myworkout.viewWorkoutScreen);
+//app.get('/myworkout/dropdown', myworkout.viewDropdownWorkoutScreen);
 
- app.get('/addWorkoutToList/dropdown', addWorkoutToList.addDropdownWorkoutToList);
-
+app.get('/addWorkoutToList', addWorkoutToList.addWorkoutToList);
+//app.get('/addWorkoutToList/dropdown', addWorkoutToList.addDropdownWorkoutToList);
 
 app.get('/bodyMap', bodyMap.viewBodyMap);
+//app.get('/bodyMap/dropdown', bodyMap.viewDropdownBodyMap);
+
 app.get('/workoutresults', workoutResults.viewWorkoutResults);
+//app.get('/workoutresults/dropdown', workoutResults.viewDropdownWorkoutResults);
+
 app.get('/favorites', favorites.viewfavorites);
 app.get('/dailylog', dailylog.viewDailyLog);
 app.get('/notes', notes.viewNotes);
