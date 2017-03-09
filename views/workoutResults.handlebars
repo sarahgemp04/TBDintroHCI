@@ -65,6 +65,7 @@
   <script>
     $(document).ready(function() {
       $(".test").click(function(e) {
+        e.preventDefault();
         console.log("test");
         console.log(this.id);
         $.get('addFavorite?id=' + this.id);
@@ -76,6 +77,7 @@
         }
         else {
           $(this).css("color", "black");
+          $.get('removeFavorite?id=' + this.id);
         }
       });
 

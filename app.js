@@ -28,6 +28,7 @@ var notes = require('./routes/notes');
 var login = require('./routes/login');
 var addWorkoutToList = require('./routes/addWorkoutToList');
 var addFavorite = require('./routes/addFavorite');
+var removeFavorite = require('./routes/removeFavorite');
 
 var existing = require('./routes/existing')
 
@@ -81,6 +82,7 @@ app.get('/yourlist', yourlist.viewWorkoutList);
 app.get('/login', login.viewLogin);
 app.get('/existing', existing.viewExisting);
 app.get('/addFavorite', addFavorite.add);
+app.get('/removeFavorite', removeFavorite.remove);
 
 // Example route
 // app.get('/users', user.list);
