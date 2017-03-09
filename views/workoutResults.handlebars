@@ -5,7 +5,6 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="/css/bootstrap.min.css" rel="stylesheet">
-  <link href="/css/bootstrap-theme.min.css" rel="stylesheet">
   <link href="/css/introHCI.css" rel="stylesheet">
   <!-- this is a comment in HTML -->
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -32,25 +31,11 @@
         <!--<a href="yourlist?id={{video}}"><img src="/img/add.png" width="24"></a>-->
         <a href=addWorkoutToList?id={{video}}&name={{name}}&desc={{Description}}&info={{info}}> <img src="/img/add.png" width="24"></a>
         <!-- <a href="#" id="{{video}}"><img src="/img/remove.png" width="24"></a> -->
-        <a class="test" href="#" id="{{video}}"> <img src="/img/starblack.png" width="24"></a>
+        <a class="test" href="#" id="{{video}}"> <img src="/img/yellowstar.png" width="24"></a>
         <p> </p>
       </div>
       {{/each}}   
 
-    
-      <!--
-      <video width="320" height="240" controls>
-        <source src="movie.mp4" type="video/mp4">
-        <source src="movie.ogg" type="video/ogg">
-        Your browser does not support the video tag.
-      </video>
-      <br>
-      <a href="yourlist"> + </a>
-      <br>
-      <a href="#"> - </a>
-      <br>
-      <a href="#"> Favorite </a>
-    -->
   </div>
   <ul class="botnav" id="botNav">
     <li><a class="active" href="myworkout"><img src="/img/weightliftinggray.png"><br>My Workout</a></li>
@@ -60,7 +45,6 @@
   </ul>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
-  <script src="/js/jQuery-rwdImageMaps/jquery.rwdImageMaps.min.js"> </script>
   <script src="https://code.jquery.com/jquery.js"></script>
   <script>
     $(document).ready(function() {
