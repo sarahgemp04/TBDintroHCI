@@ -43,7 +43,7 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
         <!--<a href="yourlist?id={{video}}"><img src="/img/add.png" width="24"></a>-->
         <a href=addWorkoutToList?id={{video}}&name={{name}}&desc={{Description}}&info={{info}}> <img src="/img/add.png" width="24"></a>
         <!-- <a href="#" id="{{video}}"><img src="/img/remove.png" width="24"></a> -->
-        <a class="test" href="#" id="{{video}}"> <img src="/img/yellowstar.png" width="24"></a>
+        <a class="test" href="#" id="{{video}}"> ★ </a>
         <p> </p>
       </div>
       {{/each}}   
@@ -67,7 +67,7 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
 
         var currColor = $(this).css("color");
         console.log(currColor);
-        if(currColor == "rgb(42, 100, 150)") {
+        if(currColor == "rgb(0, 0, 0)") {
           $(this).css("color", "yellow");
         }
         else {
