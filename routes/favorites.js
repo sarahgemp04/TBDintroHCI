@@ -7,5 +7,5 @@ exports.viewfavorites = function(req, res) { 
 
 exports.returnFavorites = function(req, res) {
 	console.log("trying to display what current savedFavorites are which is: " + JSON.stringify(savedFavorites));
-	res.render('favorites', savedFavorites);
+	res.send(savedFavorites);
 }

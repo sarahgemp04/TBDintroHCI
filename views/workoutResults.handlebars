@@ -48,10 +48,21 @@
 
   <script src="https://code.jquery.com/jquery.js"></script>
   <script>
-    $.get('favoriteReturn', function(data) {
-      console.log("current data returned in get fun is:" + data);
-    });
     $(document).ready(function() {
+            console.log("tryinig to run get");
+    $.get('favoriteReturn', function(data) {
+        console.log("current data returned in get fun is:" + JSON.stringify(data));
+        for(var i = 0; i < data.favorites.length; i++) {
+          $('.test').each(function() {
+            console.log("curr id found: " + this.id);
+            console.log("checking with: " + data.favorites[i]["video"]);
+            if(this.id == data.favorites[i]["video"]) {
+              console.log("setting video with id: " + this.id + " to yellow");
+              $(this).css("color", "yellow");
+            }
+          });
+        }
+    });
       $(".test").click(function(e) {
         e.preventDefault();
         console.log("test");
@@ -69,7 +80,6 @@
           $.get('removeFavorite?id=' + this.id);
         }
       });
-
     });
   </script>
   <script>
