@@ -75,13 +75,18 @@
     //Will toggle the + and -
     $.get('listReturn', function(data) {
         console.log("current data returned in get fun is:" + JSON.stringify(data));
-        for(var i = 0; i < data.favorites.length; i++) {
-          $('.test').each(function() {
-            console.log("curr id found: " + this.id);
-            console.log("checking with: " + data.favorites[i]["video"]);
-            if(this.id == data.favorites[i]["video"]) {
-              console.log("setting video with id: " + this.id + " to yellow");
-              $(this).css("color", "yellow");
+        var name = $('.addWork').attr("name");
+        console.log("name is recorded as:" + name);
+        console.log("length of workouts is:" + data.workouts[name].length);
+        for(var i = 0; i < data.workouts[name].length; i++) {
+          $('.addWork').each(function() {
+            var video = $(this).attr("data-video");
+            console.log("checking with: " + data.workouts[name][i]["video"]);
+            console.log("if it matches: " + video);
+            if(video == data.workouts[name][i]["video"]) {
+              console.log("setting video to - since added already");
+              $(this).css("color", "red");
+              $(this).text("-");
             }
           });
         }
