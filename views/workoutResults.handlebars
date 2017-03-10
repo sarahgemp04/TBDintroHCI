@@ -73,7 +73,23 @@
       var video = $(this).attr("data-video");
       console.log("name is shown as:" + this.name);
       console.log("video is shown as:" + video);
-      $.get('addWorkoutToList?id=' + video + '&name=' + this.name);
+      var color = $(this).css("color");
+      //then change the symbol
+      //add it if + add
+      if(color == "rgb(0, 0, 0)") {
+        console.log("found it was black then add video");
+        $.get('addWorkoutToList?id=' + video + '&name=' + this.name);
+        //change the css to a '-' symbol
+        $(this).css("color", "red");
+      }
+      //else it's red - and must be removed
+      else {
+        console.log("found it was red now remove video");
+        console.log("trying to remove:" + video);
+        $.get('removeWorkout?id=' + video + '&name=' + this.name);
+        //change the css to a '+' symbol
+        $(this).css("color", "black");
+      }
     });
 
     //will toggle colors and add to favorite list

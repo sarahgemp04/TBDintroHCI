@@ -42,7 +42,6 @@ exports.addWorkoutToList = function(req, res) { 
 
 
     res.redirect('yourlist');
-    
 }
 
 /*exports.addDropdownWorkoutToList = function(req, res) {    

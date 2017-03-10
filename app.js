@@ -82,6 +82,7 @@ app.get('/existing', existing.viewExisting);
 app.get('/addFavorite', addFavorite.add);
 app.get('/removeFavorite', removeFavorite.remove);
 app.get('/favoriteReturn', favorites.returnFavorites);
+app.get('/removeWorkout', myworkout.removeWorkout);
 
 // Example route
 // app.get('/users', user.list);
