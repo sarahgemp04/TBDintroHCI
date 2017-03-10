@@ -38,9 +38,7 @@
         <h2> {{name}} </h2>
         <iframe width="560" height="315" src={{video}} frameborder="0" allowfullscreen></iframe>
         <br>
-        <!--<a href="yourlist?id={{video}}"><img src="/img/add.png" width="24"></a>-->
-        <a class="addWork" name="{{name}}" data-video="{{video}}" href="#"> <img src="/img/add.png" width="24"></a>
-        <!-- <a href="#" id="{{video}}"><img src="/img/remove.png" width="24"></a> -->
+        <a class="addWork" name="{{name}}" data-video="{{video}}" href="#">+</a>
         <a class="test" href="#" id="{{video}}">★</a>
         <p> </p>
       </div>
@@ -97,6 +95,7 @@
       console.log("name is shown as:" + this.name);
       console.log("video is shown as:" + video);
       var color = $(this).css("color");
+
       //then change the symbol
       //add it if + add
       if(color == "rgb(0, 0, 0)") {
@@ -104,6 +103,7 @@
         $.get('addWorkoutToList?id=' + video + '&name=' + this.name);
         //change the css to a '-' symbol
         $(this).css("color", "red");
+        $(this).text("-");
       }
       //else it's red - and must be removed
       else {
@@ -112,6 +112,8 @@
         $.get('removeWorkout?id=' + video + '&name=' + this.name);
         //change the css to a '+' symbol
         $(this).css("color", "black");
+        $(this).text("+");
+
       }
     });
 
