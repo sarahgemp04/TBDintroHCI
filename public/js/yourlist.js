@@ -16,11 +16,12 @@ function initializePage() {
 function dropClicked(e) {
 	console.log("inside dropClicked");
 		
+
 	e.preventDefault();
 
 	var drop = this.parentElement.childNodes[3];
 	if(drop.style.display == "none") {
-		drop.style.display = "inline-block"
+		drop.style.display = "inline-block";
 	} else {
 		drop.style.display = "none";
 	}

@@ -584,3 +584,46 @@ button {
 .exit:hover {
     color: red;
 }
+
+.breadcrumb, .multi-steps {
+  width: 90%;
+  max-width: 768px;
+  padding: 0.5em 1em;
+  margin: 1em auto;
+  background-color: #edeff0;
+  border-radius: .25em;
+}
+.breadcrumb::after, .multi-steps::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+.breadcrumb li, .multi-steps li {
+  display: inline-block;
+  float: left;
+  margin: 0.5em 0;
+}
+.breadcrumb li::after, .multi-steps li::after {
+  /* this is the separator between items */
+  display: inline-block;
+  margin: 0 .6em;
+  color: #959fa5;
+}
+.breadcrumb li:last-of-type::after, .multi-steps li:last-of-type::after {
+  /* hide separator after the last item */
+  display: none;
+}
+.breadcrumb li > *, .multi-steps li > * {
+  /* single step */
+  display: inline-block;
+  font-size: 1.4rem;
+  color: #2c3f4c;
+}
+.breadcrumb li.current > *, .multi-steps li.current > * {
+  /* selected step */
+  color: #00BCD4;
+}
+.no-touch .breadcrumb a:hover, .no-touch .multi-steps a:hover {
+  /* steps already visited */
+  color: #00BCD4;
+}
