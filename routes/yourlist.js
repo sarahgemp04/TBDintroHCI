@@ -29,7 +29,4 @@ exports.viewWorkoutList = function(req, res) { 
 			'chest': chest,
 			'dropdown': bool
 		});
-
-
-
 };
