@@ -48,6 +48,9 @@
 
   <script src="https://code.jquery.com/jquery.js"></script>
   <script>
+    $.get('favoriteReturn', function(data) {
+      console.log("current data returned in get fun is:" + data);
+    });
     $(document).ready(function() {
       $(".test").click(function(e) {
         e.preventDefault();

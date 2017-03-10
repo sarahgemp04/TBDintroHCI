@@ -83,6 +83,7 @@ app.get('/login', login.viewLogin);
 app.get('/existing', existing.viewExisting);
 app.get('/addFavorite', addFavorite.add);
 app.get('/removeFavorite', removeFavorite.remove);
+app.get('/favoriteReturn', favorites.returnFavorites);
 
 // Example route
 // app.get('/users', user.list);
