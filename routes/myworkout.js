@@ -31,4 +31,8 @@ exports.removeWorkout = function(req, res) {
 	}
 	console.log(yourList);
 	
+};
+
+exports.listReturn = function(req, res) {
+	res.send(yourList);
 }

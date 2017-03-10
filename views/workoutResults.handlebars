@@ -74,6 +74,21 @@
         }
     });
 
+    //Will toggle the + and -
+    $.get('listReturn', function(data) {
+        console.log("current data returned in get fun is:" + JSON.stringify(data));
+        for(var i = 0; i < data.favorites.length; i++) {
+          $('.test').each(function() {
+            console.log("curr id found: " + this.id);
+            console.log("checking with: " + data.favorites[i]["video"]);
+            if(this.id == data.favorites[i]["video"]) {
+              console.log("setting video with id: " + this.id + " to yellow");
+              $(this).css("color", "yellow");
+            }
+          });
+        }
+    });
+
     //will toggle and add to list
     //href=addWorkoutToList?id={{video}}&name={{name}}
     $(".addWork").click(function(e) {
