@@ -24,13 +24,14 @@
 
 
       <h1> {{type}} Workout Results </h1>
+      <a href="yourlist"> To Your List </a>
       {{#each workout}}
       <div class="videoContainer" style="text-align:center">
         <h2> {{name}} </h2>
         <iframe width="560" height="315" src={{video}} frameborder="0" allowfullscreen></iframe>
         <br>
         <!--<a href="yourlist?id={{video}}"><img src="/img/add.png" width="24"></a>-->
-        <a href=addWorkoutToList?id={{video}}&name={{name}}> <img src="/img/add.png" width="24"></a>
+        <a class="addWork" name="{{name}}" data-video="{{video}}" href="#"> <img src="/img/add.png" width="24"></a>
         <!-- <a href="#" id="{{video}}"><img src="/img/remove.png" width="24"></a> -->
         <a class="test" href="#" id="{{video}}">★</a>
         <p> </p>
@@ -49,7 +50,8 @@
   <script src="https://code.jquery.com/jquery.js"></script>
   <script>
     $(document).ready(function() {
-            console.log("tryinig to run get");
+
+      //Will color in favorites if needed
     $.get('favoriteReturn', function(data) {
         console.log("current data returned in get fun is:" + JSON.stringify(data));
         for(var i = 0; i < data.favorites.length; i++) {
@@ -63,6 +65,18 @@
           });
         }
     });
+
+    //will toggle and add to list
+    //href=addWorkoutToList?id={{video}}&name={{name}}
+    $(".addWork").click(function(e) {
+      e.preventDefault();
+      var video = $(this).attr("data-video");
+      console.log("name is shown as:" + this.name);
+      console.log("video is shown as:" + video);
+      $.get('addWorkoutToList?id=' + video + '&name=' + this.name);
+    });
+
+    //will toggle colors and add to favorite list
       $(".test").click(function(e) {
         e.preventDefault();
         console.log("test");
@@ -80,6 +94,8 @@
           $.get('removeFavorite?id=' + this.id);
         }
       });
+
+
     });
   </script>
   <script>
