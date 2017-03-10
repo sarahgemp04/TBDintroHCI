@@ -64,15 +64,16 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
         e.preventDefault();
         console.log("test");
         console.log(this.id);
-        $.get('addFavorite?id=' + this.id);
-
         var currColor = $(this).css("color");
         console.log(currColor);
         if(currColor == "rgb(0, 0, 0)") {
           $(this).css("color", "yellow");
+          console.log("added video");
+          $.get('addFavorite?id=' + this.id);
         }
         else {
           $(this).css("color", "black");
+          console.log("trying to remove video");
           $.get('removeFavorite?id=' + this.id);
         }
       });
