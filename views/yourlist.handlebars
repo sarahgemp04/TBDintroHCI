@@ -30,32 +30,160 @@
 
       {{#if dropdown}}
       
-      {{#each workout}}
       <div class="dropElement">
-          <a href=# style="width: 50%; font-size: 25px; padding: 0px;" class="dropTitle btnd btn-d btn-drop">{{name}} Workout</a>
+          <a href=# style="width: 50%; font-size: 25px; padding: 0px;" class="dropTitle btnd btn-d btn-drop">Ab Workouts</a>
 
-          <div style="display: none;" class="drop-box" id={{video}}>
-           
+          <div style="display: none;" class="drop-box" >
+          {{#each abs}}
+
               <h4 style="text-align: center">Your Video:</h4> 
               <iframe style="width: 100%; height: 250px; " src={{video}} frameborder="0" allowfullscreen></iframe></br>
+          {{/each}}
+
               <!--
               {{Description}}
               <a href={{info}} style="color: #00BCD4;">Learn more and get some fitspiration here!</a>-->
           </div>
       </div>      
-      {{/each}}
+      <div class="dropElement">
+          <a href=# style="width: 50%; font-size: 25px; padding: 0px;" class="dropTitle btnd btn-d btn-drop">Arm Workouts</a>
+
+          <div style="display: none;" class="drop-box" >
+          {{#each arms}}
+   
+              <h4 style="text-align: center">Your Video:</h4> 
+              <iframe style="width: 100%; height: 250px; " src={{video}} frameborder="0" allowfullscreen></iframe></br>
+          
+          {{/each}}
+
+          </div>
+      </div>      
+      <div class="dropElement">
+          <a href=# style="width: 50%; font-size: 25px; padding: 0px;" class="dropTitle btnd btn-d btn-drop">Chest Workouts</a>
+
+          <div style="display: none;" class="drop-box" >
+          {{#each chest}}
+
+              <h4 style="text-align: center">Your Video:</h4> 
+              <iframe style="width: 100%; height: 250px; " src={{video}} frameborder="0" allowfullscreen></iframe></br>
+          {{/each}}
+
+              <!--
+              {{Description}}
+              <a href={{info}} style="color: #00BCD4;">Learn more and get some fitspiration here!</a>-->
+          </div>
+      </div>      
+      <div class="dropElement">
+          <a href=# style="width: 50%; font-size: 25px; padding: 0px;" class="dropTitle btnd btn-d btn-drop">Full Body Workouts</a>
+
+          <div style="display: none;" class="drop-box" >
+          {{#each fullbody}}
+      
+              <h4 style="text-align: center">Your Video:</h4> 
+              <iframe style="width: 100%; height: 250px; " src={{video}} frameborder="0" allowfullscreen></iframe></br>
+          {{/each}}
+
+              <!--
+              {{Description}}
+              <a href={{info}} style="color: #00BCD4;">Learn more and get some fitspiration here!</a>-->
+          </div>
+      </div>      
+      <div class="dropElement">
+          <a href=# style="width: 50%; font-size: 25px; padding: 0px;" class="dropTitle btnd btn-d btn-drop">Leg Workouts</a>
+
+          <div style="display: none;" class="drop-box">
+          {{#each legs}}
+
+              <h4 style="text-align: center">Your Video:</h4> 
+              <iframe style="width: 100%; height: 250px; " src={{video}} frameborder="0" allowfullscreen></iframe></br>
+          {{/each}}
+
+              <!--
+              {{Description}}
+              <a href={{info}} style="color: #00BCD4;">Learn more and get some fitspiration here!</a>-->
+          </div>
+      </div>      
+      <div class="dropElement">
+          <a href=# style="width: 50%; font-size: 25px; padding: 0px;" class="dropTitle btnd btn-d btn-drop">Neck Workouts</a>
+
+          <div style="display: none;" class="drop-box" >
+          {{#each neck}}
+
+              <h4 style="text-align: center">Your Video:</h4> 
+              <iframe style="width: 100%; height: 250px; " src={{video}} frameborder="0" allowfullscreen></iframe></br>
+          {{/each}}
+
+              <!--
+              {{Description}}
+              <a href={{info}} style="color: #00BCD4;">Learn more and get some fitspiration here!</a>-->
+          </div>
+      </div>      
+      <div class="dropElement">
+          <a href=# style="width: 50%; font-size: 25px; padding: 0px;" class="dropTitle btnd btn-d btn-drop">Shoulder Workouts</a>
+
+          <div style="display: none;" class="drop-box" >
+           {{#each shoulders}}
+
+           
+              <h4 style="text-align: center">Your Video:</h4> 
+              <iframe style="width: 100%; height: 250px; " src={{video}} frameborder="0" allowfullscreen></iframe></br>
+            {{/each}}
+
+              <!--
+              {{Description}}
+              <a href={{info}} style="color: #00BCD4;">Learn more and get some fitspiration here!</a>-->
+          </div>
+      </div>      
+
       
       
     {{else}}
 
 
-      {{#each workout}}
+      {{#each abs}}
       <div class="videoContainer" style="text-align:center">
-        <h2>{{name}} {{type}} workout</h2>
+        <h2>Ab Workout</h2>
+        <iframe width="560" height="315" src="{{video}}" frameborder="0" allowfullscreen></iframe>
+      </div>
+      {{/each}}
+      {{#each arms}}
+      <div class="videoContainer" style="text-align:center">
+        <h2>Arm Workout</h2>
+        <iframe width="560" height="315" src="{{video}}" frameborder="0" allowfullscreen></iframe>
+      </div>
+      {{/each}}
+      {{#each chest}}
+      <div class="videoContainer" style="text-align:center">
+        <h2>Chest Workout</h2>
+        <iframe width="560" height="315" src="{{video}}" frameborder="0" allowfullscreen></iframe>
+      </div>
+      {{/each}}
+      {{#each fullbody}}
+      <div class="videoContainer" style="text-align:center">
+        <h2>Full Body Workout</h2>
+        <iframe width="560" height="315" src="{{video}}" frameborder="0" allowfullscreen></iframe>
+      </div>
+      {{/each}}
+      {{#each legs}}
+      <div class="videoContainer" style="text-align:center">
+        <h2>Leg Workout</h2>
+        <iframe width="560" height="315" src="{{video}}" frameborder="0" allowfullscreen></iframe>
+      </div>
+      {{/each}}
+      {{#each neck}}
+      <div class="videoContainer" style="text-align:center">
+        <h2>Neck Workout</h2>
+        <iframe width="560" height="315" src="{{video}}" frameborder="0" allowfullscreen></iframe>
+      </div>
+      {{/each}}
+      {{#each shoulders}}
+      <div class="videoContainer" style="text-align:center">
+        <h2>Shoulder Workout</h2>
         <iframe width="560" height="315" src="{{video}}" frameborder="0" allowfullscreen></iframe>
       </div>
       {{/each}}
       {{/if}}
+
       <a href="notes"> <h3> Add notes </h3> </a>
   	</div>
     <!--

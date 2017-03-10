@@ -23,7 +23,6 @@ var bodyMap = require('./routes/bodyMap');
 var workoutResults = require('./routes/workoutresults')
 var yourlist = require('./routes/yourlist');
 var favorites = require('./routes/favorites');
-var dailylog = require('./routes/dailylog');
 var notes = require('./routes/notes');
 var login = require('./routes/login');
 var addWorkoutToList = require('./routes/addWorkoutToList');
@@ -76,7 +75,6 @@ app.get('/workoutresults', workoutResults.viewWorkoutResults);
 //app.get('/workoutresults/dropdown', workoutResults.viewDropdownWorkoutResults);
 
 app.get('/favorites', favorites.viewfavorites);
-app.get('/dailylog', dailylog.viewDailyLog);
 app.get('/notes', notes.viewNotes);
 app.get('/yourlist', yourlist.viewWorkoutList);
 app.get('/login', login.viewLogin);

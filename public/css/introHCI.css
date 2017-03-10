@@ -168,10 +168,6 @@ ul.topnav li.right {
     content: url(/img/weightlifting.png);
 }
 
-.icon-calendar:before {
-    content: url(/img/calendar.png);
-}
-
 .icon-star:before {
     content: url(/img/star.png);
 }
