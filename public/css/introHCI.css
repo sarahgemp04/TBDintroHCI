@@ -188,6 +188,7 @@ ul.topnav li.right {
     content: url(/img/home.png);
 }
 
+
 #handle {
     position: absolute;
     margin: 10px 10px 10px 0;
@@ -570,4 +571,20 @@ button {
     position: relative;
     display: block;
     margin: 0px auto;
+}
+
+.dropTitle{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.exit {
+    color: red;
+    position: relative; 
+    top: -300px;
+    font-size: 20px;
+}
+.exit:hover {
+    color: red;
 }
