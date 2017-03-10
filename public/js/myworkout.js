@@ -10,11 +10,9 @@ $(document).ready(function() {
  */
 function initializePage() {
 	console.log("Javascript connected!");
-    $("#yourlistbtn").click(existingClicked);
 }
 
 function existingClicked() {
 	console.log("existing clicked");
-    ga("send", "event", 'dropdown', 'click');
 }
 
