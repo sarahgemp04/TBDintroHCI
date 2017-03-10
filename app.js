@@ -58,8 +58,8 @@ if ('development' == app.get('env')) {
 }
 
 // Add routes here
-app.get('/', index.view);
-app.get('/dropdown', index.viewDropdown);
+app.get('/', index.viewDropdown);
+//app.get('/dropdown', index.viewDropdown);
 app.post('/', index.viewLogin);
 	//jsonfile.writeFile(file, obj, function(err) {console.error(err)});
 app.get('/myworkout', myworkout.viewWorkoutScreen);
