@@ -2,7 +2,7 @@
 body {
     background: #fff;
     font-family: Work Sans;
-    padding-bottom: 40px;
+    padding-bottom: 60px;
 }
 
 h1 {
@@ -265,11 +265,10 @@ ul.topnav li.right {
 
 
 .bodyMap {
-    width: 300px;
+    width: 270px;
     height: 600px;
     position: absolute;
-    margin-left: 25%;
-    padding-bottom: 20px;
+    margin-left: 24%;
 }
 
 .workoutOptions {
@@ -288,12 +287,12 @@ ul.topnav li.right {
 }
 
 .workoutLeft {
-    left: 60px;
+    left: 50px;
 }
 
 .workoutRight {
     align-self: flex-end;
-    right: 90px;
+    right: 100px;
 }
 
 .workoutOptions li {
@@ -303,7 +302,7 @@ ul.topnav li.right {
     background: #00BCD4;
     display: inline;
     border: solid #e0faff 1px;
-    margin-top: 20px;
+    margin-top: 10px;
     margin-left: 0;
     position: relative;
     text-align: center;
@@ -339,47 +338,6 @@ ul.topnav li.right {
     height: 80px;
     width: 80px;
     text-align: center;
-}
-
-.tabBar {
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    flex-flow: row;
-    align-items: center;
-    justify-content: space-around;
-    -webkit-align-items: left;
-    position: fixed;
-    bottom: 0;
-    padding: 3px 15px 3px 7px;
-    background-color: #e3eff0;
-    box-shadow: 2px 2px 4px #eee;
-    border-top: solid #a6a6a6 1px;
-}
-
-.tabBar a {
-    margin: 0;
-    padding: 5px 4px 3px 0px;
-    display: inline-block;
-    text-decoration: none;
-    color: #26C6DA;
-}
-
-.tabItem {
-    text-align: center;
-    width: 90px;
-    padding: 0 5px 0 5px;
-    font-size: 12px;
-}
-
-.tabItem:hover {
-    background: #eee;
-}
-
-.tabBar img {
-    width: 20px;
 }
 
 .botnav {
@@ -511,7 +469,7 @@ ul.botnav li a.active {
         font-size: 25px;
     }
     .workoutLeft {
-        left: -18px;
+        left: -40px;
         margin-top: 5px;
     }
     .workoutRight {
