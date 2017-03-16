@@ -7,7 +7,7 @@ exports.viewBodyMap = function(req, res) { 
   	res.render('bodyMap', {
   	 'title': bodyMap,
      'day': "",
-     'dropdown': false
+     'dropdown': true
   });
   } else {
   	var day = req.query.id;
@@ -17,7 +17,7 @@ exports.viewBodyMap = function(req, res) { 
   	res.render('bodyMap', {
   		'title': "Friday",
       'day': req.query.id,
-     'dropdown': false
+     'dropdown': true
   	});
   }
 

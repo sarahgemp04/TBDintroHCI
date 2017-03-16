@@ -1,7 +1,7 @@
 var yourList = require('../yourList.json');
 exports.viewWorkoutScreen = function(req, res) { 
   res.render('myworkout', {
-    'dropdown': false
+    'dropdown': true
   });
 };
 
