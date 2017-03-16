@@ -17,6 +17,10 @@ h2 {
     font-size: 20px;
 }
 
+h4 { 
+    text-align: center;
+}
+
 a:link {
     text-decoration: none;
 }
@@ -534,6 +538,7 @@ button {
     position: relative;
     display: block;
     margin: 0px auto;
+    text-align:center;
 }
 
 .dropTitle{
@@ -609,3 +614,8 @@ button {
   position: relative;
   top: 1px;
 }
+
+.container {
+    margin: 0 auto;
+}
+
