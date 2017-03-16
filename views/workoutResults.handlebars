@@ -56,7 +56,6 @@
   <script src="https://code.jquery.com/jquery.js"></script>
   <script>
     $(document).ready(function() {
-
       //Will color in favorites if needed
     $.get('favoriteReturn', function(data) {
         console.log("current data returned in get fun is:" + JSON.stringify(data));
@@ -72,7 +71,7 @@
         }
     });
 
-    //Will toggle the + and -
+    //Will set the + and -
     $.get('listReturn', function(data) {
         console.log("current data returned in get fun is:" + JSON.stringify(data));
         var name = $('.addWork').attr("name");
@@ -140,7 +139,6 @@
           $.get('removeFavorite?id=' + this.id);
         }
       });
-
 
     });
   </script>
