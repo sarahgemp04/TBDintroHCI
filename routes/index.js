@@ -1,4 +1,3 @@
-var jsonfile = require('jsonfile');
 var userJSON = require('../user.json');
 var list = require('../yourList.json');
 /*
@@ -6,7 +5,6 @@ var list = require('../yourList.json');
  */
 
  exports.view = function(req, res){
-	//jsonfile.writeFile(file, obj, function(err) {console.error(err)});
 		var today = new Date();
 	if(userJSON.date == "" || userJSON.date == undefined) {
 		userJSON["date"] = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
@@ -21,7 +19,6 @@ var list = require('../yourList.json');
 };
 
 exports.viewDropdown = function(req, res){
-	//jsonfile.writeFile(file, obj, function(err) {console.error(err)});
 	var today = new Date();
 	if(userJSON.date == "" || userJSON.date == undefined) {
 		userJSON["date"] = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
