@@ -1,4 +1,4 @@
-var listToAdd = require("../yourList.json");
+var listToAdd = require("../jsonData/yourList.json");
 
 
 

@@ -1,4 +1,4 @@
-var savedFavorites = require('../savedFavorites.json');
+var savedFavorites = require('../jsonData/savedFavorites.json');
 
 exports.add = function(req, res) { 
 	console.log(req.query.id);

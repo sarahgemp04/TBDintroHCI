@@ -1,4 +1,4 @@
-var savedFavorites = require('../savedFavorites.json');
+var savedFavorites = require('../jsonData/savedFavorites.json');
 
 exports.remove = function(req, res) { 
 	console.log("given json: " + JSON.stringify(savedFavorites));

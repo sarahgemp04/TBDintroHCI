@@ -1,4 +1,4 @@
-var yourlist = require("../yourList.json");
+var yourlist = require("../jsonData/yourList.json");
 
 exports.viewWorkoutList = function(req, res) { 
 

@@ -1,5 +1,5 @@
-var userJSON = require('../user.json');
-var list = require('../yourList.json');
+var userJSON = require('../jsonData/user.json');
+var list = require('../jsonData/yourList.json');
 /*
  * GET home page.
  */

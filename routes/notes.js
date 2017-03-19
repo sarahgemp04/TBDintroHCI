@@ -1,5 +1,5 @@
-var savedNotes = require('../savedNotes.json');
-var userJSON = require('../user.json');
+var savedNotes = require('../jsonData/savedNotes.json');
+var userJSON = require('../jsonData/user.json');
 
 exports.viewNotes = function(req, res) { 
 	console.log("entered notes routes");

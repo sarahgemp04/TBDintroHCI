@@ -1,5 +1,5 @@
-var workouts = require('../workouts.json');
-var list = require('../yourList.json');
+var workouts = require('../jsonData/workouts.json');
+var list = require('../jsonData/yourList.json');
 
 exports.viewWorkoutResults = function(req, res) { 
 	console.log("req id is: " + req.query.id);

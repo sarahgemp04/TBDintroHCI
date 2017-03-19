@@ -1,4 +1,4 @@
-var yourList = require('../yourList.json');
+var yourList = require('../jsonData/yourList.json');
 exports.viewWorkoutScreen = function(req, res) { 
   res.render('myworkout', {
     'dropdown': true

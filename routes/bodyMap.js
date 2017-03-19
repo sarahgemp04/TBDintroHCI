@@ -1,4 +1,4 @@
-var days = require('../days.json');
+var days = require('../jsonData/days.json');
 
 exports.viewBodyMap = function(req, res) { 
 
